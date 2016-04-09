@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<title>Referal|Consultant</title>
+	<style>
+th.ui-widget-header { "
+	background: #7157A0;
+	"
+}
+
+.mainTable {
+	margin-left: 10px;
+	margin-right: auto;
+	border-top-radius: 30px;
+	margin-bottom: 15px;
+}
+
+.caption1 {
+	font-family: Times New Roman, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: blue;
+}
+
+.caption2 {
+	font-family: Times New Roman, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: red;
+}
+
+.heading {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	background-color: #00C1C1;
+	text-align: center;
+}
+
+.heading:hover {
+	background-color: #00C1C1;
+}
+
+.even {
+	font-family: Times New Roman, serif;
+	font-size: 17px;
+	color: black;
+	background-color: white;
+	text-indent: 20px;
+}
+
+.odd {
+	font-family: Times New Roman, serif;
+	font-size: 17px;
+	color: black;
+	background-color: white;
+	text-indent: 20px;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #00C1C1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+</style>
+</h:head>
+<h:body>
+	<ui:include src="/xhtml/connaissanceLoginHeader.xhtml" />
+	<h:form>
+
+		<p:messages />
+
+		<div
+			style="border: 1px solid #e6e5e5; width: 800px; margin: 39px auto; height: 350px; margin-bottom: 70px; display: inline-block; margin-left: 300px;">
+
+
+			<table style="margin: 32px 0px 0px 63px;" cellpadding="5"
+				cellspacing="6">
+				<tr>
+
+					<td>Resume Title</td>
+					<td><h:inputText style="height:24px;width:250px;"
+							value="#{testItMBean.consultantReferalTable.resumeTitle}"></h:inputText>
+					</td>
+				</tr>
+				<tr>
+
+					<td>Candidate Name</td>
+					<td><h:inputText style="height:24px;width:250px;"
+							value="#{testItMBean.consultantReferalTable.candidateName}"></h:inputText>
+					</td>
+				</tr>
+				<tr>
+
+					<td>EmailId</td>
+					<td><h:inputText style="height:24px;width:250px;"
+							value="#{testItMBean.consultantReferalTable.emailId}"></h:inputText>
+					</td>
+				</tr>
+				<tr>
+
+					<td>Contact Number</td>
+					<td><h:inputText style="height:24px;width:250px;"
+							value="#{testItMBean.consultantReferalTable.contactNumber}"></h:inputText>
+					</td>
+				</tr>
+				<tr>
+					<td>Resume UpLoad</td>
+					<td><ace:fileEntry id="eventpost"
+							relativePath="/upload/#{testItMBean.eventManagementUploadId}"
+							immediate="true"
+							fileEntryListener="#{testItMBean.uploadProfileImage}"
+							useOriginalFilename="true" useSessionSubdir="false"
+							rendered="true"></ace:fileEntry></td>
+				</tr>
+				<tr>
+					<td><h:commandButton styleClass="myButton"
+							style="width:350px; margin-top:47px;height: 34px;font-weight:bold;border-width: 1px;  border-style: solid; cursor: pointer;overflow: visible;font-size:16px;font-family: Arial,sans-serif;"
+							action="#{testItMBean.saveReferCategory}" value="Submit" /></td>
+				</tr>
+			</table>
+
+
+		</div>
+
+	</h:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>

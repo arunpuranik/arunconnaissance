@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component"> <h:head>
+	<title>Contact Us</title>
+	<script type="text/javascript">
+		function validateRepassword() {
+			var pasw = document.getElementById('checkpassw:password');
+			var Rpasw = document.getElementById('checkpassw:Rpassword');
+			if (pasw.value != Rpasw.value) {
+				alert("Passwords do not match");
+			}
+		}
+	</script>
+	<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =                                                      
+		                                                         
+		                                                         
+		                                                         
+		                                                                    
+		                                                                    
+		                                  80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head> <h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<ice:form>
+	
+
+	<div
+			style="border: 1px solid #ebebeb; height: 1500px; width: 938px; margin-left: 194px;margin-top: 46px;margin-bottom: 20px;">
+		<p><u><b>Get in touch</b></u></p>
+	    <table>
+	    <tr>
+	    <td>Connaissance IT</td>
+	    </tr>
+	    <tr>
+	    <td>#620, Dr. Rajkumar Road,</td>
+	    </tr>
+	    <tr>
+	    <td>Rajaji Nagar 2nd Blk, Banaglore 10</td>
+	    </tr>
+	    <tr>
+	    <td>happinesscreator@connaissance.co</td>
+	    </tr>
+	    <tr>
+	    <td>Toll Free: 1800-102-9069</td>
+	    </tr>
+	    
+	    <tr>
+	    <td>Fixed Line: 080-4250-4350</td>
+	    </tr>
+	    <tr>
+	    <td>Hand Held: 78490-1-7799</td>
+	    </tr>
+	     <tr style="margin-right: 5000px;">
+					<td><span
+						style="color: #fff; font-family: Arial, sans-serif; font-size: 13px; font-weight: bold; margin-left: 13px;">Lets
+							Connect </span></td>
+
+					<td><a href="https://www.facebook.com/ConnaissanceIT"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/facebook.png"></ice:graphicImage></a></td>
+					<td><a href="https://www.linkedin.com/company/connaissance-it"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/LinkedIn.png"></ice:graphicImage></a></td>
+					<td><a
+						href="https://www.youtube.com/channel/UCKw-m_RwCy0AVNeFZD0nj0w"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/YouTube.png"></ice:graphicImage></a></td>
+							<td><a
+						href="http://www.slideshare.net/happinesscreator"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/YouTube.png"></ice:graphicImage></a></td>
+
+				</tr>
+	    <tr>
+	    
+	    <td>
+	    
+	   <div id="googleMap" style="width:700px;height:380px;margin-left: 255px;margin-top: 5px;"></div>
+	    
+
+	    </td>
+	    </tr>
+	   
+	    </table>
+	<table>
+	<tr>
+	<td>
+	<ice:outputLabel value="Name:"/>
+	</td>
+	<td>
+	<h:inputText value="#{enquireMBean.enquire.name}"/>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<ice:outputLabel value="EmailId:"/>
+	</td>
+	<td>
+	<h:inputText value="#{enquireMBean.enquire.emailId}"/>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<ice:outputLabel value="Phone:"/>
+	</td>
+	<td>
+	<h:inputText value="#{enquireMBean.enquire.phoneNumber}"/>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<ice:outputLabel value="Your Query"/>
+	</td>
+	<td>
+	<ice:inputTextarea value="#{enquireMBean.enquire.yourQuery}"></ice:inputTextarea>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<ice:commandButton action="#{enquireMBean.saveEnquireDetails}" value="Call Me"></ice:commandButton>
+	</td>
+	</tr>
+	
+	
+	</table>
+		</div>
+		
+		
+<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+	</ice:form>
+</h:body> </html>

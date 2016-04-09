@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xmlns:tx="http://www.springframework.org/schema/tx"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> 
+		<property name="jndiName"> <value>jdbc/IBM_GS_LC</value> </property> <property 
+		name="jndiTemplate"> <ref bean="jndiTemplate" /> </property> </bean> -->
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/connaissance" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>
+
+
+	<!-- <bean id="jndiTemplate" class="org.springframework.jndi.JndiTemplate"> 
+		<property name="environment"> <props> <prop key="Context.INITIAL_CONTEXT_FACTORY"> 
+		com.ibm.websphere.naming.WsnInitialContextFactory </prop> </props> </property> 
+		</bean> -->
+
+
+
+
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+
+		<property name="mappingLocations" value="classpath:/com/connaissance/domain/*.hbm.xml">
+		</property>
+
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<!-- <prop key="hibernate.current_session_context_class"> org.hibernate.context.ThreadLocalSessionContext 
+					</prop> <prop key="hibernate.hbm2ddl.auto">update</prop> -->
+			</props>
+		</property>
+	</bean>
+
+
+
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy"> 
+		<property name="targetDataSource"> <bean class="org.apache.commons.dbcp.BasicDataSource"> 
+		<property name="driverClassName" value="${driver}" /> <property name="url" 
+		value="${url}" /> <property name="username" value="${usr}" /> <property name="password" 
+		value="${pwd}" /> <property name="maxIdle" value="${maxidle}" /> <property 
+		name="minIdle" value="${minidle}" /> <property name="maxActive" value="${maxactive}" 
+		/> </bean> </property> </bean> -->
+	<!-- If we opt to use JTA transactions, we could replace this with the JTATransactionManager 
+		or configure Hibernante to work with JTATransactions and keep this as is. -->
+
+
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>
+
+
+	<!-- This is the base transaction proxy factory bean, all transactional 
+		managers use this bean definition. -->
+
+	<bean id="transProxyTemplate" abstract="true"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager">
+			<ref bean="transactionManager" />
+		</property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="create*">
+					PROPAGATION_REQUIRED,-Exception
+				</prop>
+				<prop key="*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="add*">PROPAGATION_REQUIRED,-Exception</prop>
+			</props>
+		</property>
+		<property name="preInterceptors">
+			<list></list>
+		</property>
+		<property name="postInterceptors">
+			<list></list>
+		</property>
+	</bean>
+
+</beans>

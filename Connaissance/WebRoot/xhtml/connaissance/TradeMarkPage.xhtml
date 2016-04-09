@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component"> <h:head>
+	<title>TradeMark</title>
+	<script type="text/javascript">
+		function validateRepassword() {
+			var pasw = document.getElementById('checkpassw:password');
+			var Rpasw = document.getElementById('checkpassw:Rpassword');
+			if (pasw.value != Rpasw.value) {
+				alert("Passwords do not match");
+			}
+		}
+	</script>
+
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =                                                      
+		                                                         
+		                                                         
+		                                                         
+		                                                                    
+		                                                                    
+		                                  80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head> <h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<ice:form>
+	<div
+			style="border: 1px solid #ebebeb; height: 1500px; width: 938px; margin-left: 194px;margin-top: 46px;margin-bottom: 20px;">
+		<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">© 2016 CONNAISSANCE or an CONNAISSANCE affiliate company. All rights reserved. No part of this publication may be reproduced or transmitted in any form or for any purpose without the express permission of CONNAISSANCE or an CONNAISSANCE affiliate company.
+			
+			</p>
+			
+			<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">CONNAISSANCE and other CONNAISSANCE products and services mentioned herein as well as their respective logos are trademarks or registered trademarks of CONNAISSANCE (or an CONNAISSANCE affiliate company) in India. All other product and service names mentioned are the trademarks of their respective companies.
+			</p>
+			
+			<p style=" margin-top: 44px;  margin-left: 204px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"><u >Trade Mark</u></p>
+			<p style=" margin-top: -37px;  margin-left: 694px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"><u > Status</u></p>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 158px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">Connaissance</li>
+	<li style=" margin-top: -22px;
+    margin-left: 670px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">TM
+</li>
+	</ul>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 158px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">Connaissance IT 		</li>
+	<li style=" margin-top: -22px;
+    margin-left: 670px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">TM
+</li>
+	</ul>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 158px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">Connaissance Asset Shoppe India Pvt Ltd  		</li>
+	<li style=" margin-top: -22px;
+    margin-left: 670px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">®
+</li>
+	</ul>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 158px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"> First SAP Job 	  		</li>
+	<li style=" margin-top: -22px;
+    margin-left: 670px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">®
+</li>
+	</ul>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 158px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"> FSJ 		  		</li>
+	<li style=" margin-top: -22px;
+    margin-left: 670px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">TM
+</li>
+	</ul>
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">The trademarks above are hereinafter collectively mentioned as Connaissance trademarks.
+			</p>
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">The absence of a product or service name or logo from the list above does not constitute a waiver of Connaissance trademark or other intellectual property rights concerning that name or logo.
+			</p>
+	
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">By using an Connaissance trademark, in whole or in part, you are acknowledging that Connaissance is the sole owner of the trademark. You acknowledge that you will not interfere with the rights of Connaissance in the trademark in any manner whatsoever. The goodwill derived from using any of the Connaissance trademark exclusively inures to the benefit of and belongs to Connaissance. Except for the limited right to use as expressly permitted under these Guidelines, no other rights of any kind are granted hereunder, by implication or otherwise.
+			</p>
+	
+	
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">Guidelines on use:
+			</p>
+	
+	
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;">The trademarks, service marks, trade names, and trade dress of Connaissance are valuable proprietary assets. Please follow the guidelines listed below to help us protect our trademark rights and strengthen our brand identity. You shall not use any Connaissance trademark in any manner other than that stated below.
+			</p>
+	
+	<ul>
+	
+	<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  	Please use the appropriate ™, SM, or ® symbol in respect of each trademark on first use in any publication in India. For publications that will be distributed outside India, do not include trademark symbols but use the appropriate trademark attribution notice, for example: Connaissance and FSJ are trademarks of Connaissance Limited, registered in India.
+		  		</li>
+		<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  	Always spell and capitalize the trademarks of Connaissance exactly as they are shown in the list above. Do not shorten or abbreviate the trademarks. Do not make up names that contain Connaissance trademarks.
+			  		</li>
+			<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  	Please do not use a variation, phonetic equivalent, foreign language equivalent, takeoff, or abbreviation of any Connaissance trademarks for any purpose.
+				  		</li>	
+			<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  	Please do not use any Connaissance trademark in connection with web sites, products, packaging, manuals, promotional/advertising materials, or for any other purpose except pursuant to an express written trademark license from Connaissance.
+				  		</li>	
+			<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  Please do not use any Connaissance trademark in a manner that would imply the affiliation of Connaissance with or endorsement, sponsorship, or support of a third party product or service.
+					  		</li>	
+			<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  		Please do not manufacture, sell or give-away merchandise items, such as T-shirts and mugs, bearing any Connaissance trademark including symbols, logos, or icons, except pursuant to an express written trademark license from Connaissance.
+			  		</li>	
+			<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  	Please do not imitate the distinctive Connaissance web site design, logos, or typefaces.
+	  		</li>
+	  					<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  		Please do not use or imitate an Connaissance slogan or tagline. For example: “Where Employees Enjoy Customers Rejoice” 
+	  					  		</li>
+	  					  		<li style=" margin-top: 24px;  margin-left: 78px;font-size: 15px; font-family: Calibri; text-align: justify;width: 723px;line-height: 1.5;">  		Please do not use an identical or virtually identical Connaissance trademark as a second level domain name.
+			  		</li>
+	</ul>
+	
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"></p>
+	
+	
+	
+	<p
+			style=" margin-top: 17px;  margin-left: 72px;font-size: 15px; font-family: Calibri; text-align: justify;width: 800px;line-height: 1.5;"></p>
+	
+	
+	
+		</div>
+<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+	</ice:form>
+</h:body> </html>

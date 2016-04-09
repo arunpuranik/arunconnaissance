@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<title>Privacy Statement</title>
+	<script type="text/javascript">
+		function validateRepassword() {
+			var pasw = document.getElementById('checkpassw:password');
+			var Rpasw = document.getElementById('checkpassw:Rpassword');
+			if (pasw.value != Rpasw.value) {
+				alert("Passwords do not match");
+			}
+		}
+	</script>
+
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =                                                       
+		                                                         
+		                                                         
+		                                                         
+		                                                                    
+		                                                                    
+		                                   80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head>
+<h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<ice:form>
+		<div
+			style="border: 1px solid #ebebeb; height: 1900px; width: 938px; margin-left: 194px; margin-top: 46px;margin-bottom: 20px;">
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 16px; font-family: Calibri; font-weight: bold;">Connaissance
+				Group Privacy Statement</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Connaissance
+				Group's Privacy Policy aims to protect the personal information you
+				provide online. It is available on our homepage and at every page
+				where personally identifiable information is requested. Please
+				direct all questions regarding this policy to Mr. Paritosh Anand,
+				Data Protection Officer at info.it@connaissance.co</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 16px; font-family: Calibri; font-weight: bold;">Collection
+				and Use of Information</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Connaissance
+				Group will collect your personal information only if you provide it
+				of your own volition. If you do not want your personal information
+				to be collected, please do not submit it.</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">We
+				value your privacy. We do not rent or sell your personal
+				information. When you submit your personal details and contact
+				information, you give us explicit consent to call, email, or send
+				SMS to you to confirm participation at the event, workshop and/or to
+				related courses/programmes you are registering to or registered in.
+			</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Furthermore,
+				in the course of browsing our site we may automatically track
+				certain information about you. This information may include the URL
+				that you just came from (whether this URL is on our site or not),
+				which URL you go to next (whether this URL is on our site or not),
+				what browser you are using, and your IP address. Many other websites
+				automatically collect this information.</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">We
+				only use the information provided through our site to help us
+				improve our services to you, to provide you with the products you
+				have requested, to inform you about additional products or services
+				that may be of interest to you, for marketing purposes and for other
+				internal purposes. Connaissance Group occasionally hires other
+				companies to provide limited services on our behalf, including
+				packaging, mailing and delivering purchases, answering customer
+				questions about products or services, sending mail and processing
+				event registration. Connaissance Group will only provide these
+				companies with the information they need to deliver the service, and
+				they are prohibited from using that information for any other
+				purpose. Other than what is described, Connaissance Group does not
+				sell, trade, or rent your personal information to others outside of
+				Connaissance Group and its subsidiaries or parent company, and their
+				advertising and promotional agencies and consultants.</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">At
+				any time, while accessing our site, you may decline participation in
+				any activity that asks for information (i.e. survey email, or
+				ecommerce). Your choice not to participate will in no way affect
+				your ability to use any other feature on our website. You may
+				opt-out of our mailing list at any time by sending an email to
+				info.it@connaissance.co. When you decide to opt-out, we will delete
+				all information about you from our database.</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 16px; font-family: Calibri; font-weight: bold;">Security</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Connaissance
+				Group has implemented several security features throughout the
+				Connaissance Group site to prevent the unauthorized release of or
+				access to personal information. For instance, database information
+				is kept separate from live servers and is firewall protected.</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">However,
+				even though Connaissance Group endeavours to create a secure and
+				reliable site for you, the confidentiality of any communication or
+				material transmitted to or from Connaissance Group via the
+				Connaissance Group website or e-mail cannot be guaranteed. When
+				disclosing any personal information, you should be mindful of the
+				fact that it is potentially accessible to the public, and
+				consequently, can be collected and used by others without your
+				consent. Connaissance Group has no responsibility or liability for
+				the security of information transmitted via the Internet.</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 16px; font-family: Calibri; font-weight: bold;">Use
+				of cookies:</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Cookies
+				are small text files that, like most other Web servers, we place in
+				your device that you use to access our website. This is done to
+				recognize your device during a session or in your future visits to
+				our website, primarily in order to provide better user experience.</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Types
+				of cookies used:</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Session
+				cookie: Session cookies remain only as long as a browsing session is
+				active, and are intended to avoid user inconvenience during
+				browsing. These cookies allow websites to link the actions of a user
+				during a browser session and expire at the end of the browsing
+				session. Session cookies also assist the user in navigating the
+				website, and allow the user to access secure parts of the webpage
+				when logged in.</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Persistent
+				cookie: Persistent cookies are stored on a user’s device even after
+				termination of a browsing session. It helps in recalling the
+				preferences or actions of the user. Persistent cookies are used for
+				a variety of purposes such as retaining the visitor’s language and
+				regional preference(s) at the end of each browsing session. We may
+				use services of third-party analytics service provider to analyse
+				cookies to carry out a behavioural analysis in order to enhance user
+				experience and convenience, and also to provide targeted and
+				relevant content to visitors.</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Depending
+				on the type and settings of your browser, cookies may be accepted by
+				default. You may change the settings of your browser to delete
+				existing cookies or prevent future cookies from being automatically
+				accepted. If you disable cookies, certain parts and functions of our
+				website may not be available. You can learn more about cookies at
+				www.aboutcookies.org</p>
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5; font-weight: bold;">External
+				Web Sites</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">To
+				the extent hyperlinks or banner advertisements incorporating
+				hyperlinks are used to access third party sites, you should be aware
+				that these third party web sites are not controlled by Connaissance
+				Group and, therefore, are not subject to this Privacy Policy. You
+				should check the privacy policies of those individual sites to see
+				how your personal information will be used by the operators of those
+				third party web sites.</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5; font-weight: bold;">Your
+				Consent</p>
+
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">By
+				using our website, you consent to the collection and use of this
+				information by Connaissance Group. Connaissance Group may modify
+				this Privacy Policy from time to time. If we decide to change our
+				Privacy Policy, we will post those changes on this page. Your
+				continued use of this site following the posting of changes to these
+				terms will mean you accept these changes. You may have the right to
+				access the personal information, which Connaissance Group has
+				collected about you. You may also have the right to modify any
+				errors contained in that information. Please contact us for more
+				details.</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5; font-weight: bold;">How
+				to Contact Us</p>
+
+			<p
+				style="margin-top: 17px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px; line-height: 1.5;">Should
+				you have other questions or concerns about this Privacy Policy,
+				please send us an email at info.it@connaissance.co.</p>
+
+			<p
+				style="margin-top: -13px; margin-left: 72px; font-size: 15px; font-family: Calibri; text-align: justify; width: 800px;">Copyright
+				© 2015 Connaissance Group. All rights reserved.</p>
+
+
+
+		</div>
+		<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+	</ice:form>
+</h:body>
+</html>

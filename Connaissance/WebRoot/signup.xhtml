@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<title>Candidate|SignUp</title>
+
+
+	<script type="text/javascript">
+	function validateRepassword() {
+		var pasw = document.getElementById('checkpassw:password');
+		var Rpasw = document.getElementById('checkpassw:Rpassword');
+		if (pasw.value != Rpasw.value) {
+			alert("Passwords do not match");
+		}
+	}
+</script>
+</h:head>
+<h:body>
+	<ice:form>
+		<p
+			style="color: green; font-weight: bold; position: center; margin-left: 422px; margin-top: 207px; font-size: 50px;">Welcome
+			to Connaissance</p>
+
+<fieldset >
+<legend class="fmheading" style="color: Green">SignUp</legend>
+
+<table
+			style="margin-bottom: 200px; margin-top: 54px; margin-left: 459px; background-color: #FAFAFA;  ">
+			<tr>
+				<td><ice:outputLabel value="FirstName" /></td>
+				<td><ice:inputText
+						value="#{candidateRegistrationMBean.candidateRegistrationTable.firstName}"></ice:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><ice:outputLabel value="LastName" /></td>
+				<td><ice:inputText
+						value="#{candidateRegistrationMBean.candidateRegistrationTable.lastName}"></ice:inputText>
+				</td>
+			</tr>
+
+			<tr>
+				<td><ice:outputLabel value="Email Id" /></td>
+				<td><ice:inputText
+						value="#{candidateRegistrationMBean.candidateRegistrationTable.emailId}"></ice:inputText>
+				</td>
+			</tr>
+			<tr>
+				<td><ice:outputLabel value="Password" /></td>
+				<td><ice:inputSecret
+						value="#{candidateRegistrationMBean.candidateRegistrationTable.password}" />
+				</td>
+			</tr>
+			<tr>
+				<td><ice:outputLabel value="Retype Password" /></td>
+				<td><ice:inputSecret
+						value="#{candidateRegistrationMBean.cPassword}"
+						onchange="validateRepassword();" feedback="true" inline="true"
+						requiredMessage="Confirm Password is required" required="true" /></td>
+			</tr>
+
+		</table>
+
+</fieldset>
+		
+
+	</ice:form>
+
+</h:body>
+</html>

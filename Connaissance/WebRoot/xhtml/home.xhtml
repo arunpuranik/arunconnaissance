@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<title>Connaissance|Home</title>
+
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/faces; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles.css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+		type="text/javascript"></script>
+	<script src="script.js"></script>
+
+	<link
+		href="#{facesContext.externalContext.requestContextPath}/resources/css/kkkkkkk.css"
+		rel="stylesheet" type="text/css" />
+	<link rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/resources/css/eventpagination/styles.css"
+		type="text/css" />
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+		type="text/javascript"></script>
+
+	<style>
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1
+		), color-stop(1, #0061a7));
+	background: -moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1',
+		endColorstr='#0061a7', GradientType=0);
+	background-color: #007dc1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7
+		), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7',
+		endColorstr='#007dc1', GradientType=0);
+	background-color: #0061a7;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+<script type ="text/javascript">function validateRepassword () {var pasw
+	= document.getElementById('checkpassw:password ');var Rpasw =
+	document.getElementById('checkpassw:Rpassword ');if (pasw.value !=
+	Rpasw.value) { alert("Passwords do not match");
+	
+}
+
+}
+</script>
+
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head>
+
+<h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<h:form>
+		<div
+			style="border: solid 1px silver; width: 901px; height: 1860px; margin-left: 147px; margin-top: 60px; background: #f3f3f3;">
+			<p
+				style="line-height: 1.8rem; color: #504F4F; font-size: 1.6rem; clear: both; font-weight: normal; margin-left: 400px; margin-top: 6px; font-family: Open Sans, Helvetica, Arial, sans-serif !important;">Manage
+				Profiles</p>
+			<div id='cssmenu' style="margin-left: 0px; margin-top: -59px;">
+
+				<ul id="first">
+					<li id="bor"><a href='#'><div
+								style="color: darkslateblue; font-weight: bolder;">Select
+								a category</div></a></li>
+
+					<li class='active has-sub' id="bor"><a href='#'><span>Create</span></a>
+
+
+						<ul>
+							<h:commandLink action="#{superMethodsMBean.commonCommandLink}">
+								<li class='has-sub'><span> SAP Consultants</span></li>
+							</h:commandLink>
+
+
+
+							<li class='has-sub'><a href='#' style="margin-top: -8px;"><span>Freelance Counsellor</span></a></li>
+
+
+							<li class='has-sub'><a href='#'><span>Referral Member</span></a></li>
+
+							<li class='has-sub'><a href='#'><span>Company
+										Update</span></a></li>
+
+							
+						</ul></li>
+
+
+					<li class='active has-sub' id="bor"><a href='#'><span>Manage</span></a>
+						<ul>
+							<li class='has-sub'><a href='#'><span>Profiles</span></a></li>
+							<li class='has-sub'><a href='#'><span>Earnings </span></a></li>
+
+							<li class='has-sub'><a href='#'><span>Referrals </span></a></li>
+
+							
+						</ul></li>
+
+				
+
+					<li class='last' id="bor"><a href='#'><span>Refer</span></a>
+
+						<ul>
+							<li class='has-sub'><a href="#"> <span>Person</span>
+							</a></li>
+
+							<li class='has-sub'><a href="#"> <span>Comapny</span>
+							</a></li>
+
+							<li class='has-sub'><a href="#"> <span>Institute</span>
+							</a></li>
+
+							<li class='has-sub'><a href="#"> <span>Volunteer</span>
+							</a></li>
+						</ul></li>
+					
+					
+
+					
+
+					
+					
+					
+					
+					
+					
+					
+				</ul>
+
+
+
+			</div>
+
+			<div style="clear: both;"></div>
+
+
+		</div>
+	</h:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>

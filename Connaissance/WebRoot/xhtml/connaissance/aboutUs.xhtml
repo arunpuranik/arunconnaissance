@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+
+	<link rel="shortcut icon"
+		href="#{facesContext.externalContext.requestContextPath}/resources/images/ms-icon-310x310.png"
+		type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script> 
+
+/* $(document).readt(function()){
+	$("#box1").click(function){
+		$("#conts1").fadeToggle("slow");
+		$("#p1").hide(); 
+	    $("#p2").hide();
+	    $("#p3").hide();
+	    $("#p4").hide();
+	    
+		}
+} */
+
+$(document).ready(function(){
+	  $("#box1").click(function(){
+	      $("#conts1").fadeToggle("slow");	
+	      $("#p2").hide();
+	      $("#p3").hide();
+	      $("#p4").hide();
+	      $("#conts0").hide();
+	    
+
+	  });
+    });
+	
+$(document).ready(function(){
+    $("#p1").hide(); 
+    $("#p2").hide();
+    $("#p3").hide();
+    $("#p4").hide();
+    $("#conts1").hide();
+    });
+     
+ $(document).ready(function(){
+   $("#business").click(function(){
+      $("#p1").fadeToggle("slow");	
+      $("#p2").hide();
+      $("#p3").hide();
+      $("#p4").hide();
+      $("#conts1").hide();
+      $("#conts0").hide();
+    
+   });
+    });
+    $(document).ready(function(){
+    	   $("#business1").click(function(){
+    	      $("#p2").fadeToggle("slow");	
+    	      $("#p1").hide();
+    	      $("#p3").hide();
+    	      $("#p4").hide();
+    	      $("#conts1").hide();
+    	      $("#conts0").hide();
+    	
+    	   });
+    	    });
+    	    $(document).ready(function(){
+    	    	   $("#business2").click(function(){
+    	    	      $("#p3").fadeToggle("slow");	
+    	    	      $("#p2").hide();
+    	    	      $("#p1").hide();
+    	    	      $("#p4").hide();
+    	    	      $("#phi").hide();
+    	    	      $("#conts1").hide();
+    	    	      $("#conts0").hide();
+    	    	    });
+    	    	    });
+    	    $(document).ready(function(){
+ 	    	   $("#business3").click(function(){
+ 	    	      $("#p4").fadeToggle("slow");	
+ 	    	     $("#p2").hide();
+ 	    	    $("#p3").hide();
+ 	    	    $("#p1").hide();
+ 	    	    $("#conts1").hide();
+ 	    	   $("#conts0").hide();
+ 	    	
+ 	    	    });
+ 	    	    });
+    
+  
+  </script>
+	<style>
+#whole,#one,#two,#line {
+	width: 100%;
+}
+
+#one {
+	background: #fff;
+	height: 161px;
+}
+
+#two {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+
+#line {
+	background: #00C1C1;
+	height: 5px;
+	margin-top: 2px;
+}
+
+#content {
+	height: auto;
+}
+
+#img {
+	float: left;
+}
+
+#text {
+	float: right;
+	margin-right: 50px;
+}
+
+#box1,#box2,#box3,#box4 {
+	float: left;
+}
+
+#box1:hover,#box2:hover,#box3:hover,#box4:hover {
+	background: #00C1C1;
+	cursor: pointer;
+}
+
+#box1 {
+	margin-left: -1px;
+	height: 100%;
+	width: 273px;
+}
+
+#box2,#box3,#box4 {
+	width: 210px;
+	height: 100%;
+}
+</style>
+</h:head>
+<h:body>
+	<ice:form>
+
+		<div id="whole">
+			<div id="one">
+				<div id="img">
+					<ice:graphicImage
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"
+						width="527" height=""></ice:graphicImage>
+				</div>
+				<div id="text">
+					<ice:graphicImage
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/stars.png"
+						width="" height="" style="margin-left: 167px; margin-top: 20px;"></ice:graphicImage>
+
+
+
+
+					<p style="font-family: calibri; margin-top: 30px;">
+						Where <span style="color: red">Employees</span> enjoy, <span
+							style="color: #00C1C1">Customers</span> rejoice
+					</p>
+					<table style="margin-top: 58px; margin-left: 218px;" border="0">
+						<tr>
+
+							<td><ice:graphicImage
+									value="#{facesContext.externalContext.requestContextPath}/resources/images/login.png">
+
+								</ice:graphicImage></td>
+							<td><ice:commandLink
+									action="#{connassianceHeaderMbean.redirectLoginPage}">
+									<span style="font-family: calibri; color: white;"> Login</span>
+								</ice:commandLink></td>
+
+
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="two">
+				<div id="box1">
+					<center>
+						<p
+							style="margin-top: -21px; font-family: calibri; color: #fff; margin-top: 0px; margin-left: -1px; font-size: 18px; margin-top: 10px;">THE
+							CONNAISSANCE TEAM</p>
+					</center>
+				</div>
+			</div>
+			<div id="line"></div>
+		</div>
+
+		<div style="margin-top: -4px; margin-left: -31px;">
+
+			<div id="business"
+				style="margin-top: 4px; margin-left: 31px; background-color: #008B8B; width: 254px; height: 24px; line-height: 22px; display: block; padding: 10px; margin-bottom: 10px; text-align: center;">
+				<a href="#"
+					style="font-family: calibri; font-size: 16px; line-height: 25px; color: white;">Our
+					Business</a>
+			</div>
+
+			<div id="business1"
+				style="margin-top: -9px; margin-left: 31px; background-color: #008B8B; width: 254px; height: 24px; line-height: 22px; display: block; padding: 10px; margin-bottom: 10px; text-align: center;">
+				<a href="#"
+					style="font-family: calibri; font-size: 16px; line-height: 25px; color: white;">Founder
+				</a>
+			</div>
+
+			<div id="business2"
+				style="margin-top: -9px; margin-left: 31px; background-color: #008B8B; width: 254px; height: 24px; line-height: 22px; display: block; padding: 10px; margin-bottom: 10px; text-align: center;">
+				<a href="#"
+					style="font-family: calibri; font-size: 16px; line-height: 25px; color: white;">
+					Our People</a>
+			</div>
+
+			<div id="business3"
+				style="margin-top: -9px; margin-left: 31px; background-color: #008B8B; width: 254px; height: 24px; line-height: 22px; display: block; padding: 10px; margin-bottom: 10px; text-align: center;">
+				<a href="#"
+					style="font-family: calibri; font-size: 16px; line-height: 25px; color: white;">Our
+					Vision</a>
+			</div>
+		</div>
+		<div id="p1"
+			style="color: black; font-size: 20px; top: 0; margin-top: -174px; margin-left: 330px; background-color: white; width: 1050px; border: none;">
+			&nbsp;
+
+			<h3
+				style="font-family: Calibri; color: #009393; font-size: 24px; margin-left: 12px; margin-top: -26px;">
+				<u> Connaissance Group</u>
+			</h3>
+
+			<ice:graphicImage
+				style="width: 300px;
+    height: 151px;
+    margin-top: -27px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"></ice:graphicImage>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 437px; margin-left: 347px; font-size: 16px; font-family: Calibri; margin-top: -98px; margin-bottom: 20px;">
+				Connaissance means acquaintances and we believe acquaintance is not
+				just knowing someone but knowing enough for sustainable happiness.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				With our genre of entrepreneurship, we feel creating happiness is
+				creating true value. Those who would disagree say, it’s Shareholder
+				Value. Easy as it might seem, this art is the most difficult
+				science. We therefore say that while we innovate to create the best
+				products and services, we are actually in the business of
+				manufacturing ‘Happiness’.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				This is what we attempt to do with our every single decision here
+				and that’s why we say ‘Where Employees enjoy. Customers Rejoice’.
+				Manufacturing happiness through our business activities therefore
+				would remain the central objective of our organisation. We wish that
+				our philosophy carries unique space and is completely removed from
+				the chores of the existing organisational practices.</p>
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				The physical asset of Connaissance may just be over 200 Cr. but the
+				business value of our ideas is immeasurable. Our only aim is to
+				spread happiness, through the collective strength of our intellect,
+				vision, strategies, ideas, hardwork, efficient execution, practices
+				and processes. Connaissance Group has interests in three core
+				sectors of Realty, Education and IT.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 18px; font-family: Calibri; margin-top: 6px; margin-bottom: 20px; font-weight: bolder;">
+				Our areas of business</p>
+			<p
+				style="text-align: justify; line-height: 23px; width: 723px; margin-left: 59px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				1.<u> Realty</u> - Connaissance Realty is a major player in the
+				realty sector in Karnataka engaged in landscape development,
+				constructions, and other real estate activities of buying, selling,
+				leasing and consulting for mega projects.
+			</p>
+			<p
+				style="text-align: justify; line-height: 23px; width: 723px; margin-left: 59px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				2. <u>Education</u> - Connaissance Education is engaged in education
+				in K-12 category at the moment with its school, Shri Ram
+				Vidyalayawhich is one of the reputed schools in Karnataka. We run
+				the school under charity. Very Soon we will be coming with a
+				research wing too, for developing the teaching pedagogy with IT
+				integrations, which will be called as SRE labs.
+			</p>
+			<p
+				style="text-align: justify; line-height: 23px; width: 723px; margin-left: 59px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				3. <u>IT</u> – We believe that IT is an art. This art form requires
+				a deep sense and science of imagination.
+			</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 667px; margin-left: 113px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				• Training - We are an authorised partner for SAP Global Training
+				&amp; Certification program. Presently we have our SAP education
+				centre in Bangalore and will be coming up in Hyderabad &amp; Chennai
+				in next 3 Months</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 667px; margin-left: 113px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				• Resourcing</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 667px; margin-left: 113px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				• Consulting &amp; Support - In SAP Consulting we have multiple
+				projects of customers like Kurlon, Unichem, etc.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 667px; margin-left: 113px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				• Product &amp; Platform development</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 667px; margin-left: 113px; font-size: 16px; font-family: Calibri; margin-top: -9px; margin-bottom: 20px;">
+				• Applications around content</p>
+
+		</div>
+
+		<div id="p2"
+			style="color: black; font-size: 20px; top: 0; margin-top: -174px; margin-left: 330px; background-color: white; width: 1050px; border: none;">
+			&nbsp;
+
+			<h3
+				style="font-family: Calibri; color: #009393; font-size: 24px; margin-left: 12px; margin-top: -26px;">
+				Lakshmana Nagaraja Setty</h3>
+
+			<ice:graphicImage
+				style="width: 135px; height: 113px;  margin-top: -7px; margin-left: 23px;"
+				value="
+			#{facesContext.externalContext.requestContextPath}/resources/images/founder image.jpg"></ice:graphicImage>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 567px; margin-left: 206px; font-size: 16px; font-family: Calibri; margin-top: -119px; margin-bottom: 20px;">
+				An entrepreneur, who believes entrepreneurship, is not just about
+				creating wealth but about creating well being and therefore he does
+				not just want to measure the success of his enterprise by the growth
+				of business but also by the growth in well being of employees and
+				customers. This also lies at the core philosophy of his enterprise
+				Connaissance.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				His is a typical rags to riches story of a successful entrepreneur
+				who takes the plunge into entrepreneurship just with the dream and
+				meagre resources and lives through the journey of trials and
+				tribulations just with the intensity of vision as the sole asset to
+				create a successful and sustainable business platform that shapes
+				and structures the enterprise and the lives of people within.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				He left a prolific career in IT and returned from US to make his
+				beginning as an entrepreneur from a very small office carved from
+				the space below the staircase from where his construction venture
+				started in Jayanagar, Bangalore. Today the business and the real
+				estate assets are in crores through multiple projects that are
+				underway but the roots still remain as a reminder of that humble
+				beginning.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				The initial years of his career after Engg. where he was a rank
+				holder was into manufacturing of machine tools where he handled
+				multiple challenges in production, business and business growth and
+				grew very fast in hierarchy to Head International business and
+				become its CEO and his experience became the pedestal for
+				envisioning the complexities of creating and establishing an
+				enterprise which he did through his venture Connaissance Asset
+				Shoppe (I) Pvt. Ltd.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				Today the Realty venture spans many projects in land development in
+				Mysore and Bangalore and construction venture in Devanahalli, near
+				Bangalore International Airport. The vision is to transform the
+				realty space by introducing state of art technology for a zero
+				defect in quality of construction and expand to various part of the
+				country as a trusted name in realty business. As housing is becoming
+				an important mission of the government to provide homes to all, his
+				vision is to align to this mission and look for opportunities that
+				helps exponentially grow the realty business.</p>
+
+			<p
+				style="text-align: justify; line-height: 23px; width: 775px; margin-left: 10px; font-size: 16px; font-family: Calibri; margin-top: 0px; margin-bottom: 20px;">
+				Being an engineer and technology as a space close to his heart, he
+				started his IT venture by becoming an authorised partner for SAP
+				Education in 2014. SAP is the de-facto technology standard of the
+				world today and the most sustainable with immense possibilities of
+				growth in future. The company aims to become the largest partner for
+				SAP Education in the country and grow into areas of SAP consulting
+				in future to touch atleast a 100 Cr. in revenue in the next three
+				years and a business of atleast 500 Cr. as a whole with construction
+				and other ventures.</p>
+
+
+		</div>
+		<div id="p3"
+			style="color: black; font-size: 20px; top: 0; margin-top: -174px; margin-left: 330px; background-color: white; width: 1050px; border: none;">
+			&nbsp;
+
+			<h3
+				style="font-family: Calibri; color: #009393; font-size: 24px; margin-left: 12px; margin-top: -26px;">
+				Lakshmana Nagaraja Setty</h3>
+
+			<ice:graphicImage
+				style="width: 135px; height: 113px;  margin-top: -7px; margin-left: 23px;"
+				value="
+			#{facesContext.externalContext.requestContextPath}/resources/images/founder image.jpg"></ice:graphicImage>
+		</div>
+		<div id="p4"
+			style="color: black; font-size: 20px; top: 0; margin-top: -174px; margin-left: 330px; background-color: white; width: 1050px; border: none;">
+			&nbsp;
+
+			<h3
+				style="font-family: Calibri; color: #009393; font-size: 24px; margin-left: 26px; margin-top: -26px;">
+				<u>Our Vision</u>
+			</h3>
+
+			<ice:graphicImage
+				style="width: 135px; height: 113px;  margin-top: -7px; margin-left: 23px;"
+				value="
+			#{facesContext.externalContext.requestContextPath}/resources/images/vision image.jpg"></ice:graphicImage>
+			<p
+				style="text-align: justify; line-height: 23px; width: 567px; margin-left: 206px; font-size: 16px; font-family: Calibri; margin-top: -119px; margin-bottom: 20px;">
+				To be a top notch technology organisation which harnesses the ideas
+				and innovations by leveraging the intellectual potential of people
+				within and outside the organisation in the true spirit of making the
+				organisation an open architecture, use the power of contemporary
+				technologies to shape the quality of knowledge, life and well being
+				of people, make governance simpler and effective and world a more
+				secure place and create the economics and maths of the enterprise by
+				generating customer value to forge long term perennial relationship
+				with our customers.</p>
+		</div>
+		
+		<div id="conts1" style="color: black; font-size: 20px; top: 0; margin-top: -174px;height:350px; margin-left: 330px; background-color: white; width: 1050px; border: none;">
+			&nbsp;
+		>Default contents..............
+		
+		</div>
+		
+			<div id="conts0" style="color: black; font-size: 20px; top: 0; margin-top: -174px; margin-left: 330px; background-color: white; width: 1050px; height:350px;border: none;">
+			&nbsp;
+		>Start page ContejdsnjsdnsnfnfnDefault contents..............
+		
+		</div>
+		
+	</ice:form>
+	<ui:include src="/xhtml/connaissanceFooter1.xhtml"></ui:include>
+</h:body>
+</html>

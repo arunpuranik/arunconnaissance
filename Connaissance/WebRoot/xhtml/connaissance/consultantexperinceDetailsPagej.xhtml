@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+
+	<title>Connaissance|Consultant</title>
+
+	<link rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/resources/css/styles2.css" />
+	<style>
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#mm {
+	position: relative;
+	border: 1px #d8d8d8 solid;
+	margin-left: 23px;
+	width: 335px;
+	height: 53px;
+	padding: 0 14px;
+	background: #f7f7f7;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#mm:hover {
+	outline: 1px solid #7157A0;
+}
+</style>
+
+</h:head>
+
+<h:body>
+
+	<h:outputScript library="js" name="show.js" target="body"></h:outputScript>
+	<ui:include src="../connaissance/connaissanceLoginHeader.xhtml" />
+	<h:form>
+		<div style="margin-left: -39px;">
+
+			<div style="margin-left: 42px; margin-top: 35px;">
+
+
+				<div
+					style="outline: none; display: block; width: 500px; background: #f7f7f7; height: 227px;">
+					<h2
+						style="margin-left: 70px; font-family: 'ubunturegular'; font-size: 20px; line-height: 22px; color: #7157A0; position: relative;">Personal
+						Details</h2>
+					<div style="margin-left: -31px;">
+						<ice:outputLabel
+							style="font-size:18px; font-family:Verdana, Geneva, sans-serif;margin-left: 64px;height:auto;display: block; 
+														width: 334px; word-wrap: break-word;"
+							value="#{consultantProfileMBean.consultantRegisrationTable.consultantName} #{consultantProfileMBean.consultantRegisrationTable.lastName}">
+						</ice:outputLabel>
+
+					</div>
+
+					<div id='cssmenu'>
+						<ul style="margin-left: 319px; margin-top: -37px;">
+							<li class='active has-sub'><a href='#'><span> <ice:graphicImage
+											value="#{facesContext.externalContext.requestContextPath}/resources/images/edit2.png"
+											style="width:30px; height:20px;"></ice:graphicImage>
+								</span></a>
+								<ul>
+									<li class='has-sub'><a href="#" style="width: 207px;"><span><b>Name</b><br />
+												<ice:inputText
+													value="#{consultantProfileMBean.consultantRegisrationTable.consultantName}" />
+												<ice:inputText
+													value="#{consultantProfileMBean.consultantRegisrationTable.lastName}" />
+												<br /> <br /> <ice:commandButton value="update" id="mem"
+													action="#{consultantProfileMBean.updateRecord}" /> <ice:commandButton
+													value="cancle"
+													action="#{consultantProfileMBean.updateRecord}" id="mem2" />
+										</span></a></li>
+								</ul></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+
+			<div style="margin-top: -151px; margin-left: 37px;">
+				<ice:outputLabel
+					style="font-size:18px; font-family:Verdana, Geneva, sans-serif;margin-left: 64px;height:auto;display: block; 
+														width: 334px; word-wrap: break-word;"
+					value="#{consultantProfileMBean.consultantRegisrationTable.emailId}">
+				</ice:outputLabel>
+
+			</div>
+
+			<div id='cssmenu'>
+				<ul style="margin-left: 440px; margin-top: -37px;">
+					<li class='active has-sub'><a href='#'><span> <ice:graphicImage
+									value="#{facesContext.externalContext.requestContextPath}/resources/images/edit2.png"
+									style="width:30px; height:20px;"></ice:graphicImage>
+						</span></a>
+						<ul>
+							<li class='has-sub'><a href="#" style="width: 207px;"><span><b>Name</b><br />
+										<ice:inputText
+											value="#{consultantProfileMBean.consultantRegisrationTable.emailId}" />
+
+										<br /> <br /> <ice:commandButton value="update" id="memq"
+											action="#{consultantProfileMBean.updateRecord}" /> <ice:commandButton
+											value="cancle"
+											action="#{consultantProfileMBean.updateRecord}" id="memq2" />
+								</span></a></li>
+						</ul></li>
+				</ul>
+			</div>
+			<div style="margin-left: 87px;">
+				<ice:outputLabel
+					style="font-size:18px; font-family:Verdana, Geneva, sans-serif;margin-left: 64px;height:auto;display: block; 
+														width: 334px; word-wrap: break-word;"
+					value="#{consultantProfileMBean.consultantRegisrationTable.address}">
+				</ice:outputLabel>
+
+			</div>
+
+			<div id='cssmenu'>
+				<ul style="margin-left: 553px; margin-top: -53px;">
+					<li class='active has-sub'><a href='#'><span> <ice:graphicImage
+									value="#{facesContext.externalContext.requestContextPath}/resources/images/edit2.png"
+									style="width:30px; height:20px;"></ice:graphicImage>
+						</span></a>
+						<ul>
+							<li class='has-sub'><a href="#" style="width: 207px;"><span><b>Name</b><br />
+										<ice:inputText
+											value="#{consultantProfileMBean.consultantRegisrationTable.address}" />
+
+										<br /> <br /> <ice:commandButton value="update" id="memw"
+											action="#{consultantProfileMBean.updateRecord}" /> <ice:commandButton
+											value="cancle"
+											action="#{consultantProfileMBean.updateRecord}" id="memw2" />
+								</span></a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="margin-top: -123px; margin-left: -233px;">
+			<div
+				style="outline: none; display: block; margin-left: 744px; width: 349px; background: #ebebeb; height: 225px;">
+				<h4
+					style="font-family: 'ubunturegular'; font-size: 20px; line-height: 22px; padding-top: 20px; color: #7157A0; margin-left: 116px; position: relative; width: auto; font-weight: normal;">Referral
+					History</h4>
+
+				<table style="margin-left: 82px;" cellpadding="6">
+
+					<tr>
+						<td><ice:outputLabel value="Consultant Name:"></ice:outputLabel>
+						</td>
+						<td><ice:outputText
+								value="#{consultantProfileMBean.consultantRegisrationTable.consultantName}" />
+
+						</td>
+
+					</tr>
+					<tr>
+						<td><ice:outputLabel value="No.of Referrals:"></ice:outputLabel>
+						</td>
+						<td><ice:outputText
+								value="#{consultantProfileMBean.consultantRegisrationTable.refer}" />
+
+						</td>
+					</tr>
+				</table>
+
+			</div>
+
+		</div>
+
+		
+		<div
+			style="margin-bottom: 0px; margin-top: -237px; margin-left: 20px;">
+
+			<div
+				style="float: left; color: #fff; border-radius: 2px; box-shadow: 0px 0px 5px #888888;">
+
+				<table>
+
+					<tr>
+						<td id="bcom"
+							style="background-color: #7157A0; width: 267px; height: 35px;"
+							align="center"><ice:graphicImage
+								style="margin-top: -12px; margin-bottom: -8px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/Education_icon_white.svg.png"
+								width="30" height="30" /> &nbsp;&nbsp; <ice:commandLink
+								action="#{consultantProfileMBean.addeducationRedirect}">
+								<span
+									style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #fff;">Add
+									Education Details</span>
+							</ice:commandLink></td>
+						<td id="bcom"
+							style="background-color: #7157A0; width: 267px; height: 35px;"
+							align="center"><ice:graphicImage
+								style="margin-top: -12px; margin-bottom: -8px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/job_icon.png"
+								width="30" height="30" /> &nbsp;&nbsp; <ice:commandLink
+								action="#{consultantProfileMBean.addExperienceRedirect}">
+								<span
+									style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #fff;">Add
+									Experience Details</span>
+							</ice:commandLink></td>
+
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div
+			style="border: 1px solid silver; height: 420px; box-shadow: 4px 0 2px -2px rgba(0, 0, 0, 0.4); width: 600px; margin-left: 8px; margin-top: 57px; margin-bottom: 51px;">
+
+			<table cellpadding="10" cellspacing="2" style="margin-left: 55px;">
+				<h3
+					style="margin-left: 10px; font-weight: 600; color: darkgray; font-size: large;">
+					<u>Experience Details</u>
+				</h3>
+
+				<tr>
+					<td>Organizer Name</td>
+					<td><ice:inputText
+							style="width:260px; height:25px;font-weight:bold;"
+							value="#{consultantExperienceDeatilsMean.consultantExperienceDeatilsTable.organisationName}" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Designation</td>
+					<td><ice:inputText
+							style="width:260px; height:25px;font-weight:bold;"
+							value="#{consultantExperienceDeatilsMean.consultantExperienceDeatilsTable.designation}" />
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>Skill details</td>
+					<td><ice:inputText
+							style="width:260px; height:25px;font-weight:bold;"
+							value="#{consultantExperienceDeatilsMean.consultantExperienceDeatilsTable.skillsAquired}" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Job Description</td>
+					<td><ice:inputTextarea
+							style="width:260px; height:40px;font-weight:bold;"
+							value="#{consultantExperienceDeatilsMean.consultantExperienceDeatilsTable.jobDescription}" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Job Role</td>
+					<td><ice:inputText
+							style="width:260px; height:25px;font-weight:bold;"
+							value="#{consultantExperienceDeatilsMean.consultantExperienceDeatilsTable.jobRole}" />
+					</td>
+				</tr>
+
+
+
+				<tr>
+					<td><h:commandButton
+							action="#{consultantExperienceDeatilsMean.saveEducationDeatils}"
+							value="Submit" styleClass="myButton" style="width:150px;"></h:commandButton></td>
+				</tr>
+			</table>
+		</div>
+
+		<ice:panelPopup
+			rendered="#{connassianceHeaderMbean.beforeReferedPopUP}"
+			style="width:560px;hight:600px;color:#187CC5;border-color:#187CC5;border: 10px solid rgba(0,0,0,0.3);"
+			draggable="true" autoCentre="true" modal="true">
+			<f:facet name="header">
+				<h:panelGroup style="float: left;">
+					<ice:outputLabel value="Enquire"
+						style="color:#EEE;width:25px;font-size:17px;}" />
+				</h:panelGroup>
+			</f:facet>
+			<f:facet name="header">
+
+				<h:panelGroup>
+					<h:panelGroup
+						style="float:left;width:563px;height:213px;background-color:#EEE;">
+						<ice:graphicImage
+							style="width: 59px;  height: 59px; margin-left: 245px;margin-bottom: 40px;"
+							value="#{facesContext.externalContext.requestContextPath}/resources/images/25-512.png" />
+
+						<p
+							style="font-size: 18px; font-family: segoe UI; margin-left: 20px; margin-top: -27px; color: red;">Referral
+							quote you haven't reached please refer Two Candidates</p>
+
+						<ice:commandButton
+							rendered="#{connassianceHeaderMbean.renderedPopUpInfoFromDes}"
+							action="#{connassianceHeaderMbean.eventPopValueRedirectFromDes}"
+							image="#{facesContext.externalContext.requestContextPath}/resources/images/eventclosebutton.png"
+							style="height:25px;width:30px;float:right;margin-top: -112px;">
+						</ice:commandButton>
+
+
+						<h:commandButton value="Refer" styleClass="myButton"
+							style="margin-left: 191px;   margin-top: 20px;  width: 160px;"></h:commandButton>
+					</h:panelGroup>
+
+
+				</h:panelGroup>
+			</f:facet>
+
+
+
+		</ice:panelPopup>
+
+
+	</h:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>

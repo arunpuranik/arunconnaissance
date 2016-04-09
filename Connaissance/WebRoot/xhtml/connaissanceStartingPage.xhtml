@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<style>
+#whole,#one,#two,#line {
+	width: 100%;
+}
+
+#one {
+	background: #fff;
+	height: 161px;
+}
+
+#two {
+	background: #000;
+	height: 71px;
+	opacity: 0.7;
+}
+
+#line {
+	background: #6EE0EB;
+	height: 5px;
+	margin-top: 2px;
+}
+
+#content {
+	height: auto;
+}
+
+#img {
+	float: left;
+}
+
+#text {
+	float: right;
+	margin-right: 50px;
+}
+
+#box1,#box2,#box3,#box4 {
+	float: left;
+}
+
+#box1:hover,#box2:hover,#box3:hover,#box4:hover {
+	background: #6EE0EB;
+	cursor: pointer;
+}
+
+#box1 {
+	margin-left: 40px;
+	width: 200px;
+	height: 100%;
+}
+
+#box2,#box3,#box4 {
+	width: 200px;
+	height: 100%;
+}
+</style>
+</h:head>
+<h:body>
+
+	<div id="whole">
+		<div id="one">
+			<div id="img">
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"
+					width="527" height=""></ice:graphicImage>
+			</div>
+			<div id="text">
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/stars.png"
+					width="" height="" style="margin-left: 167px; margin-top: 20px;"></ice:graphicImage>
+
+
+
+
+				<p style="font-family: calibri">
+					Where <span style="color: red">Employees</span> enjoy, <span
+						style="color: cyan">Customers</span> rejoice
+				</p>
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/login.png"></ice:graphicImage>
+				<span style="font-family: calibri"> Customer Login</span>
+
+			</div>
+		</div>
+
+		<div id="two">
+			<p
+				style="color: aliceblue; font-family: arial, sans-serif; font-size: 14px; padding-top: 30px; margin-left: 316px;">THE
+				CONNAISSANCE TEAM</p>
+
+			<ice:graphicImage width="40" height="40"
+				style="		margin-left: 547px;  margin-top: -44px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/profilePhoto.jpg"></ice:graphicImage>
+			<ice:graphicImage width="40" height="40"
+				style="		margin-left: 22px;  margin-top: -44px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/profilePhoto.jpg"></ice:graphicImage>
+			<ice:graphicImage width="40" height="40"
+				style="		margin-left: 23px;  margin-top: -44px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/profilePhoto.jpg"></ice:graphicImage>
+			<ice:graphicImage width="40" height="40"
+				style="		margin-left: 25px;  margin-top: -44px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/profilePhoto.jpg"></ice:graphicImage>
+		</div>
+		<table align="center">
+			<tr>
+
+				<td>
+					<h3 style="font-size: 16px; color: #E97C7D; font-weight: 600;">OUR
+						BUSINESS PORTFOLID</h3>
+				</td>
+			</tr>
+
+
+		</table>
+
+		<table cellspacing="50" align="center" style="margin-top: -30px;">
+			<tr>
+
+				<td
+					style="border: solid 1px #ED6265; height: 280px; width: 180px; background: #ED6265">
+					<ice:graphicImage width="25" height="25"
+						style="margin-left: 3px;   margin-top: -131px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/Commercial-Building-Icon.png"></ice:graphicImage>
+					<p
+						style="color: aliceblue; font-family: arial, sans-serif; font-size: 13px; font-weight: 800; margin-left: 37px; margin-top: -125px;">REALTY</p>
+				</td>
+				<td
+					style="border: solid 1px #42C2CF; height: 280px; width: 180px; background: #42C2CF;"><ice:graphicImage
+						width="25" height="25"
+						style="margin-left: 3px;margin-top: -131px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/it.png"></ice:graphicImage>
+					<p
+						style="color: aliceblue; font-family: arial, sans-serif; font-size: 13px; font-weight: 800; margin-left: 37px; margin-top: -125px;">IT</p></td>
+
+				<td
+					style="border: solid 1px #7157A0; height: 280px; width: 180px; background: #7157A0;"><ice:graphicImage
+						width="25" height="25"
+						style="margin-left: 3px; margin-top: -131px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/education.png"></ice:graphicImage>
+					<p
+						style="color: aliceblue; font-family: arial, sans-serif; font-size: 13px; font-weight: 800; margin-left: 37px; margin-top: -125px;">EDUCATION</p>
+				</td>
+			</tr>
+
+		</table>
+		<p style="color: #7157A0; font-size: 20px; margin-bottom: 80px;"
+			align="center">Our job is to create happiness</p>
+	</div>
+	<ice:graphicImage
+		value="#{facesContext.externalContext.requestContextPath}/resources/images/stars.png"
+		width="" height=""
+		style="margin-left: 562px;
+    margin-top: -107px;"></ice:graphicImage>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+
+</html>

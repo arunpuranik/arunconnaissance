@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon"
+		href="#{facesContext.externalContext.requestContextPath}/resources/images/ms-icon-310x310.png"
+		type="image/x-icon" />
+	<style>
+#whole1,#first,#second {
+	width: 100%;
+	margin-top: 505px;
+}
+
+#first {
+	background: #555555;
+	height: 33px;
+}
+
+#second {
+	background: #387272;
+	height: 36px;
+	margin-top: 1px;
+}
+</style>
+	<style>
+
+/*footer starts*/
+#footer1 {
+	width: 100%;
+	margin: auto;
+	height: 163px;
+	background-color: #d2d2d2;
+	clear: both !important;
+	color: #696969;
+}
+
+#footern1 .footerwrapper1 {
+	width: 1000px;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif, Calibri;
+	font-size: 14px;
+}
+
+#footer1 .footerlinks1 {
+	width: 65%;
+	font-family: Arial, Helvetica, sans-serif, Calibri;
+	font-size: 14px;
+	padding: 20px 0px;
+	margin-left: auto;
+}
+
+#footer1 .footermainlinks1 a {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif, Calibri;
+	font-size: 12px;
+	color: black;
+	font-weight: bold; "
+	padding: 20px 0px;
+	margin-left: 50px;
+}
+
+#footer1 .footermainlinks1 a {
+	font-family: Arial, Helvetica, sans-serif, Calibri;
+	font-size: 12px;
+	color: #222;
+	font-weight: bold;
+	"
+}
+
+#footer1 .footerwrapper1 a {
+	text-decoration: none;
+	padding: 0 4px;
+}
+
+#footer1.footerwrapper1 a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#footer1 .sublinks1 {
+	clear: both;
+	margin: 0px 0px 0px 400px;
+}
+
+#footer1 .sublinks1 a {
+	color: #222 !important;
+	text-decoration: none;
+	padding: 0 4px;
+}
+
+#footer1 .sublinks1 a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+#footer1 .copyright1 {
+	width: 1000px;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif, Calibri;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: auto;
+	border-top: dashed 1px #999;
+	padding-top: 10px;
+}
+
+/*footer ends*/
+</style>
+
+</h:head>
+<h:body>
+	<div id="whole1">
+		<div id="first" >
+			<ice:graphicImage style="margin: 4px 0px 0px 15px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/reality.png"></ice:graphicImage>
+			<span style="color: #fff; font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;">Realty</span>
+			<ice:graphicImage style="margin: 4px 0px 0px 5px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/education.png"></ice:graphicImage>
+
+			<span style="color: #fff;  font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;">EDUCATION</span>
+    <ice:graphicImage style="margin: -4px 0px -7px 952px;"
+				value="#{facesContext.externalContext.requestContextPath}/resources/images/toolbar_home.png"></ice:graphicImage>
+				<a href="#{facesContext.externalContext.requestContextPath}/index.html"><span style="color: #fff;  font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: bold;">HOME</span></a>
+		</div>
+		<div id="second">
+			<div style="float: left">
+				<table border="0">
+					<tr>
+						<td><span style="color: #fff;font-family: Arial, sans-serif;    font-size: 13px;    font-weight: bold;    margin-left: 13px;">Lets Connect </span></td>
+
+						<td><a href="https://www.facebook.com/ConnaissanceIT"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/facebook.png"></ice:graphicImage></a>
+
+						</td>
+						
+						<td><a href="https://www.linkedin.com/company/connaissance-it"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/LinkedIn.png"></ice:graphicImage></a>
+
+						</td>
+						<td><a href="https://www.youtube.com/channel/UCKw-m_RwCy0AVNeFZD0nj0w"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/YouTube.png"></ice:graphicImage></a>
+
+						</td>
+						<td><a href="http://www.slideshare.net/happinesscreator"><ice:graphicImage
+								style="margin: 4px 0px 0px 5px;width: 26px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/slideshareme.png"></ice:graphicImage></a>
+
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="sublinks1"
+				style="float: right; margin-top: 5px; margin-right: 5px;">
+				<a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/TermsOfUsePage.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Terms
+					of use |</a> <a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/PrivacyStatementPage.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Site
+					map | </a> <a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/PrivacyStatementPage.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Privacy
+					statement |</a> <a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/TradeMarkPage.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Trademark
+					|</a> <a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/CopyrightPage.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Copyright
+					|</a> <a
+					href="#{facesContext.externalContext.requestContextPath}/xhtml/connaissance/ContactUs.faces"
+					style="color: #fff;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 13px;">Contact
+					Us</a>
+			</div>
+			
+
+		</div>
+	</div>
+</h:body>
+</html>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+
+	<title>Connaissance|Login</title>
+
+	<script type="text/javascript">
+	<![CDATA[
+function submitOnEnter(evt){
+	if(!evt) evt = event;
+	if( evt.keyCode==13 ){
+	var eventSrc = null;
+	if(!evt.target) eventSrc = evt.srcElement;
+	else eventSrc = evt.target;
+	var formElements = eventSrc.form.elements;
+	for( var i=0;i<=formElements.length;i+=1){
+	var formElement = formElements[i];
+	if(formElement.type != null && formElement.type.toLowerCase() == 'submit'){
+	formElement.click();
+	break;
+	}
+	}
+	}
+	} - See more at: http://www.icesoft.org/JForum/posts/list/3572.page#sthash.scrngJqU.dpuf
+	
+		   ]]>
+</script>
+	<style>
+#footer1 {
+	height: 20px;
+	width: 100%;
+	background: #1d2950;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+	margin-top: 100px;
+}
+
+#contact {
+	position: relative;
+	left: 67%;;
+	top: 100px;
+	max-width: 1200px;
+	min-width: 15000px;
+	margin-top: 300px;
+}
+
+#contact img {
+	width: 334px;
+}
+
+#corporate_text {
+	float: left;
+	margin-left: 60px;
+	margin-top: 20px;
+	border: 1px #1b77b4;
+}
+</style>
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =                                              80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head>
+<h:body>
+
+	<ice:form>
+
+		<div>
+			<p:messages />
+			<div
+				style="border: solid 1px #e6e5e5; width: 100%; height: 50px; background-color: black; margin-top: -6px; margin-bottom: 89px;"></div>
+
+
+			<div
+				style="border: 1px solid #e6e5e5; width: 490px; margin: -39px auto; height: 511px; margin-bottom: 100px;">
+				<table style="margin: 10px 0px 0px 64px; padding: 10px;"
+					cellpadding="4">
+
+					<tr>
+						<td><ice:graphicImage
+								style="width: 305px;  height: 106px;   margin-top: -25px;margin-bottom: 9px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"></ice:graphicImage></td>
+					</tr>
+					<tr>
+						<td><ice:inputText id="name"
+								style="width:350px;height:28px; margin-bottom:20px;font-size: 18px;"
+								value="#{superAdminLoginMBean.emailId}"
+								requiredMessage="Enter Email Id" title="Email id">
+								<f:validateLength minimum="4" />
+							</ice:inputText></td>
+						<p:watermark value="Email Address" for="name"></p:watermark>
+					</tr>
+					<tr>
+						<td><ice:inputSecret id="pass"
+								style="width:350px;height:28px;margin-bottom:15px;font-size: 18px;"
+								value="#{superAdminLoginMBean.password}"
+								requiredMessage="Enter Password" title="Password" /></td>
+						<p:watermark value=" Password " for="pass"></p:watermark>
+					</tr>
+					<tr>
+						<td>Login As</td>
+					</tr>
+					<tr>
+						<td><ice:selectOneMenu id="logintype"
+								value="#{superAdminLoginMBean.loginAs}" required="true"
+								style="width:350px;height:35px;font-size: 18px;margin-bottom: 20px;"
+								requiredMessage="Select Login  type: ">
+								<f:selectItem itemLabel="-----  Select One  -----" itemValue="" />
+								<f:selectItem itemLabel="Login as Corporate"
+									itemValue="Corporate" />
+								<f:selectItem itemLabel="Login as Consultant"
+									itemValue="Consultant" />
+							</ice:selectOneMenu></td>
+					</tr>
+					<tr>
+						<td><ice:outputLabel
+								value="( Type the characters you see in the images below  )"
+								style=" font-size:15px;font-family: 
+						inherit;text-align:justify; font-weight:600;  margin-left:3px;  color: rebeccapurple;" />
+							<ice:graphicImage
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/captcha.jpg"
+								style="height: 57px; margin-bottom: -22px;  margin-top: 17px;  margin-left: 5px;"></ice:graphicImage>
+							<ice:outputText value="#{superAdminLoginMBean.randomString}"
+								style="font-size: 33px; margin-left: -138px;  margin-top: -21px;  margin-bottom: 20px;  font-family: Blackoak Std;  font-style: italic;" />
+						</td>
+						<td><ice:inputText
+								value="#{superAdminLoginMBean.checkSecurityNos}"
+								style="height: 27px;font-size: 20px; width: 115px;  font-weight: bold;  margin-left: -167px;  margin-top: 43px;"
+								title="Enter Security Code" /></td>
+
+					</tr>
+
+					<tr>
+						<td><ice:commandButton value="Sign in" title="Login"
+								id="login1" styleClass="myButton"
+								action="#{superAdminLoginMBean.commmonLogin}" type="submit"
+								style="width:350px; margin-top:20px;height: 34px;font-weight:bold;border-width: 1px;   border-style: solid;  cursor: pointer;overflow: visible;font-size:16px;font-family: Arial,sans-serif;" /></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</ice:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+
+</html>

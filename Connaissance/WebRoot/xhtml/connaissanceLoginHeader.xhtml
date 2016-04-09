@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<style>
+#whole,#one,#two,#line {
+	width: 100%;
+}
+
+#one {
+	background: #fff;
+	height: 161px;
+}
+
+#two {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+
+#line {
+	background: #00C1C1;
+	height: 5px;
+	margin-top: 2px;
+}
+
+#content {
+	height: auto;
+}
+
+#img {
+	float: left;
+}
+
+#text {
+	float: right;
+	margin-right: 50px;
+}
+
+#box1,#box2,#box3,#box4 {
+	float: left;
+}
+
+#box1:hover,#box2:hover,#box3:hover,#box4:hover {
+	background: #00C1C1;
+	cursor: pointer;
+}
+
+#box1 {
+	margin-left: 40px;
+	width: 200px;
+	height: 100%;
+}
+
+#box2,#box3,#box4 {
+	width: 200px;
+	height: 100%;
+}
+</style>
+</h:head>
+<h:body>
+	<h:form>
+		<div id="whole">
+			<div id="one">
+				<div id="img">
+
+
+
+					<ice:graphicImage
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"
+						width="527" height=""></ice:graphicImage>
+				</div>
+				<div id="text">
+
+					<ice:graphicImage
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/stars.png"
+						width="" height="" style="margin-left: 167px; margin-top: 20px;"></ice:graphicImage>
+
+
+
+
+					<p style="font-family: calibri">
+						Where <span style="color: red">Employees</span> enjoy, <span
+							style="color: cyan">Customers</span> rejoice
+					</p>
+
+
+
+				</div>
+			</div>
+
+			<div id="two">
+				<div id="box1">
+					<center>
+						<div style="height: 50px;">
+
+
+							<ice:graphicImage
+								style="width: 40px; height: 30px; display: inline; margin-top: 1px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/2.png"></ice:graphicImage>
+
+							<p
+								style="font-family: calibri; color: #fff; font-size: 11px; margin-top: 0px;">My
+								Profile</p>
+						</div>
+					</center>
+				</div>
+				<div id="box2">
+					<center>
+
+						<ice:commandLink
+							action="#{connassianceHeaderMbean.validateAccount}"
+							partialSubmit="true" style="text-decoration: none;">
+							<ice:graphicImage
+								style="width: 40px; height: 30px; display: inline; margin-top: 1px;"
+								value="#{facesContext.externalContext.requestContextPath}/resources/images/3.png"></ice:graphicImage>
+							<p
+								style="font-family: calibri; color: #fff; font-size: 11px; margin-top: 0px;">ENGAGEMENT
+								CATEGORY</p>
+
+						</ice:commandLink>
+					</center>
+				</div>
+				<div id="box3">
+					<center>
+
+						<ice:graphicImage
+							style="width: 40px; height: 30px; display: inline; margin-top: 1px;"
+							value="#{facesContext.externalContext.requestContextPath}/resources/images/4.png"></ice:graphicImage>
+
+						<p
+							style="font-family: calibri; color: #fff; font-size: 11px; margin-top: 0px;">REFER
+							COMPANIES</p>
+					</center>
+				</div>
+				<div id="box4">
+					<center>
+
+						<ice:graphicImage
+							style="width: 40px; height: 30px; display: inline; margin-top: 1px;"
+							value="#{facesContext.externalContext.requestContextPath}/resources/images/5.png"></ice:graphicImage>
+
+
+						<p
+							style="font-family: calibri; color: #fff; font-size: 11px; margin-top: 0px;">DISCUSS
+							DEBATE</p>
+					</center>
+				</div>
+				<div>
+
+					<table align="center">
+
+						<ice:outputText
+							value=" Hi #{connassianceHeaderMbean.consultantRegisrationTable.consultantName}"
+							style="color: white;  font-size: 18px; font-weight: bold;margin-left: 248px;"></ice:outputText>
+					</table>
+				</div>
+			</div>
+			<div id="line"></div>
+		</div>
+	</h:form>
+</h:body>
+</html>

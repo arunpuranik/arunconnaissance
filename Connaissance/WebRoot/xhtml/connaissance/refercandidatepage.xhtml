@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+
+	<title>Connaissance|Consultant</title>
+
+	<link rel="stylesheet"
+		href="#{facesContext.externalContext.requestContextPath}/resources/css/styles2.css" />
+	<style>
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+#mm {
+	position: relative;
+	border: 1px #d8d8d8 solid;
+	margin-left: 23px;
+	width: 335px;
+	height: 53px;
+	padding: 0 14px;
+	background: #f7f7f7;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+#mm:hover {
+	outline: 1px solid #7157A0;
+}
+</style>
+
+</h:head>
+
+<h:body>
+
+	<h:outputScript library="js" name="show.js" target="body"></h:outputScript>
+	<ui:include src="/xhtml/connaissanceLoginHeader.xhtml" />
+	<h:form>
+		<div
+			style="margin-left: 194px; border: 1px solid silver; height: 480px; width: 870px; margin-top: 45px;">
+			<div
+				style="outline: none; display: block; width: 680px; background: #f7f7f7; height: 350px; margin-left: 111px; margin-top: 36px;">
+				<p
+					style="margin-left: 70px; font-family: 'ubunturegular'; font-size: 20px; line-height: 22px; color: #7157A0; position: relative;">
+					Thank you for showing interest to refer Candidate to our Company</p>
+				<table style="margin-left: 120px; margin-top: 30px;" cellpadding="4"
+					cellspacing="6">
+
+
+					<tr>
+						<td>First Name</td>
+
+						<td><ice:inputText
+								value="#{referCandidateMBean.referedCandidateDatailsTable.firstName}"
+								style="width:277px;height:24px;margin-left:15px;margin-left: -172px;"></ice:inputText>
+						</td>
+					</tr>
+					<tr>
+						<td>Last name</td>
+
+						<td><ice:inputText
+								value="#{referCandidateMBean.referedCandidateDatailsTable.lastName}"
+								style="width:277px;height:24px;margin-left: -172px;"></ice:inputText>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Email Id</td>
+
+						<td><ice:inputText
+								value="#{referCandidateMBean.referedCandidateDatailsTable.emailId}"
+								style="width:277px;height:24px;margin-left: -172px;"></ice:inputText>
+						</td>
+					</tr>
+
+					<tr>
+						<td>Contact Number</td>
+
+						<td><ice:inputText
+								value="#{referCandidateMBean.referedCandidateDatailsTable.contactNumber}"
+								style="width:277px;height:24px;margin-left: -172px;"></ice:inputText>
+						</td>
+					</tr>
+					<tr>
+						<td><h:commandButton value="submit" styleClass="myButton"
+								action="#{referCandidateMBean.saveinfo}"
+								style="   margin-top: 20px;width: 160px;margin-left: 146px;"></h:commandButton></td>
+					</tr>
+				</table>
+
+			</div>
+		</div>
+	</h:form>
+</h:body>
+</html>

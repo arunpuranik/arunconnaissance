@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<title>Candidate Profile Evalution</title>
+
+</h:head>
+<h:body>
+	<ui:include src="/xhtml/connaissanceLoginHeader.xhtml" />
+
+	<h:form>
+
+		<ice:panelGroup>
+			<table>
+				<tr>
+					
+					<td><ice:outputText
+							value="#{candidateProfileEvalutionMBean.consultantReferalTable.candidateName}" />
+					</td>
+				</tr>
+				<tr>
+					
+					<td><ice:outputText
+							value="#{candidateProfileEvalutionMBean.consultantReferalTable.resumeTitle}" />
+					</td>
+				</tr>
+				<tr>
+					
+					<td><ice:outputText
+							value="#{candidateProfileEvalutionMBean.consultantReferalTable.filePath}" />
+					</td>
+				</tr>
+				<tr>
+					
+					<td><ice:outputFormat 
+							value="/upload/#{testItMBean.eventManagementUploadId}" />
+					</td>
+				</tr>
+
+			</table>
+
+
+		</ice:panelGroup>
+
+	</h:form>
+
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>

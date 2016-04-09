@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title> Connaissance </title>
+	<meta name="author" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	
+	<title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <!-- .....Slides plagins.... -->
+  
+  <!-- Slides2 -->
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+<link rel="stylesheet" href="slide.css" type="text/css" />
+  
+  
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 80%;
+height:300px;
+      margin: auto;
+  }
+   .carousel-inner {
+       width: 80%;
+   }
+   #myCarousel
+   {
+       width: 200%;
+       height:230px;
+       float: right;
+       margin-right: -350px;
+      
+   }
+  </style>
+  	<!-- a player skin as usual -->
+<link rel="stylesheet" href="//releases.flowplayer.org/6.0.4/skin/minimalist.css">
+<!-- the quality selector stylesheet -->
+<link rel="stylesheet" href="//flowplayer.org/drive/quality-selector.css">
+ 
+<!-- ... -->
+<!-- load a pre 1.9 version of the jquery library -->
+<script src="//code.jquery.com/jquery-1.8.3.min.js"></script>
+<!-- the Flowplayer script as usual -->
+<script src="//releases.flowplayer.org/6.0.4/flowplayer.min.js"></script>
+<!-- The hlsjs plugin for playback of HLS without Flash in modern browsers -->
+<script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>
+<!-- the quality selector plugin -->
+<script src="//flowplayer.org/drive/quality-selector-v6.js"></script>
+<!-- jQuery Tools -->
+<script src="http://cdn.jquerytools.org/1.2.7/all/jquery.tools.min.js"></script>
+
+		
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+	
+	
+	<!-- Libs CSS -->
+	<link href="resources/css/bootstrap.css" rel="stylesheet">
+	<link href="resources/css/simple-line-icons.css" rel="stylesheet">
+	<link href="resources/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- Project main Css -->
+	<link rel="stylesheet" type="text/css" href="tech_train.css">
+	<link rel="stylesheet" type="text/css" href="menuCom.css">
+	<link rel="stylesheet" type="text/css" href="videoStyle.css">
+
+	
+	<!-- Template CSS -->
+	<link href="css/slides.css" rel="stylesheet"> 
+	<link href="resources/css/style.css" rel="stylesheet"> 
+
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,800&amp;subsetting=all' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,800,700,300' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="tmenu.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<style type="text/css">
+#slide
+{
+	width: 40%;
+}
+</style>
+
+<script> 
+ $(document).ready(function(){
+    $("#first").click(function(){
+        $("#panel").slideToggle("slow");
+     $("#a").hide();
+        $("#panel1").slideToggle("slow");
+        $("#b").hide();	
+        $("#panel2").slideToggle("slow");
+        $("#c").hide();
+     		$("#d").hide();
+     		$("#p").hide();
+     		$("#p1").hide();
+     		$("#p2").hide();
+     		$("#e").hide();
+     		$("#f").hide();
+     		$("#g").hide();
+     	
+    });
+   $("#first1").click(function(){
+        $("#a").toggle();
+        $("#b").hide();
+        $("#c").hide();
+        $("#panel1").stop();
+    });
+ $("#second1").click(function(){
+	        $("#b").toggle();
+	        $("#a").hide();
+	        $("#c").hide();
+	        $("#panel2").stop();
+	    });
+ $("#three1").click(function(){
+     $("#c").toggle();
+     $("#a").hide();
+     $("#b").hide();
+     $("#panel1").stop();
+ });
+ });
+$(document).ready(function(){
+    $("#three").click(function(){
+        $("#p").slideToggle("slow");
+        $("#e").hide();
+        $("#p1").slideToggle("slow");
+        $("#f").hide();
+        $("#p2").slideToggle("slow");
+        $("#g").hide();
+        $("#d").hide();
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").hide();
+        $("#panel").hide();
+        $("#panel1").hide();
+        $("#panel2").hide();
+        
+       
+       
+    });
+});
+/*
+$(document).ready(function(){
+    $("#panel").click(function(){
+        $("#a").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#panel1").click(function(){
+        $("#b").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#panel2").click(function(){
+        $("#c").slideToggle("slow");
+    });
+});
+
+*/
+$(document).ready(function(){
+    $("#second").click(function(){
+        $("#d").slideToggle("slow");
+        $("#flip").show();
+        $("#panel").hide();
+        $("#panel1").hide();
+        $("#panel2").hide();
+    	$("#a").hide();
+    	$("#b").hide();
+    	$("#c").hide();
+    	$("#e").hide();
+    	$("#f").hide();
+    	$("#g").hide();
+    	$("#p").hide();
+    	$("#p1").hide();
+    	$("#p2").hide();
+    	
+    });
+    $("#first2").click(function(){
+        $("#e").toggle();
+        $("#f").hide();
+        $("#g").hide();
+    });
+    $("#second2").click(function(){
+        $("#f").toggle();
+        $("#e").hide();
+        $("#g").hide();
+    });
+    $("#three2").click(function(){
+        $("#g").toggle();
+        $("#f").hide();
+        $("#e").hide();
+    });
+});
+
+
+
+/*
+$(document).ready(function(){
+    $("#p").click(function(){
+        $("#e").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#p1").click(function(){
+        $("#f").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#p2").click(function(){
+        $("#g").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#mainmenu").click(function(){
+        $("#show").slideToggle("slow");
+    });
+});
+
+ */
+//...
+//Menu validation...
+$(document).ready(function(){
+    $("#tec").click(function(){
+        $("#show").slideToggle("slow");
+
+        $("#slides2").hide();
+        $("#panel").hide();
+        $("#panel1").hide();
+        $("#panel2").hide();
+        $("#a").hide();
+        $("#b").hide();
+        $("#c").hide();
+        $("#p").hide();
+        $("#p1").hide();
+        $("#p2").hide();
+        $("#d").hide();
+        $("#e").hide();
+        $("#f").hide();
+        $("#g").hide();
+        $("#tp1").hide();
+   	 $("#tp2").hide();
+   	 $("#tp3").hide();
+   	 $("#tp4").hide();
+   	 $("#tp5").hide();
+   	 $("#tp6").hide();
+   	  $("#cf1").hide();
+   	  $("#cf2").hide();
+   	  $("#cf3").hide();
+   	  $("#cf4").hide();
+   	  $("#plc1").hide();
+   	 $("#plc2").hide();
+   	$("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	  $("#corp2").hide();
+	  $("#corp3").hide();
+	  $("#corp4").hide();
+	  $("#corp5").hide();
+	  $("#slide").hide();
+	  $("#lo1").hide();
+
+	  
+	  
+        
+     
+    
+    });
+});
+ 
+/*  Trainings... */
+ $(document).ready(function(){
+	
+ $("a.tg1").click(function() {
+	  $(this.hash).slideToggle("slow");
+	     $("#tp2").hide();
+	     $("#tp3").hide();
+	     $("#tp4").hide();
+	     $("#tp5").hide();
+	     $("#tp6").hide();
+	     $("#cf1").hide();
+	     $("#cf2").hide();
+	     $("#cf3").hide();
+	     $("#cf4").hide();
+	     $("#plc1").hide();
+		 $("#plc2").hide();
+		 $("#ut1").hide();
+		  $("#ut2").hide();
+		  $("#ut3").hide();
+		  $("#ut4").hide();
+		  $("#ut5").hide();
+		  $("#uc1").hide();
+		  $("#uc2").hide();
+		  $("#uc3").hide();
+		  $("#uc4").hide();
+		  $("#up1").hide();
+		  $("#up2").hide();
+		  $("#up3").hide();
+		  $("#corp1").hide();
+		  $("#corp2").hide();
+		  $("#corp3").hide();
+		  $("#corp4").hide();
+		  $("#corp5").hide();
+		  
+	  
+ }); 
+ });
+ 
+$(document).ready(function(){
+	$("a.tg2").click(function() {
+		  $(this.hash).slideToggle("slow");	
+		     $("#tp1").hide();
+		     $("#tp3").hide();
+		     $("#tp4").hide();
+		     $("#tp5").hide();
+		     $("#tp6").hide();
+		     $("#cf1").hide();
+		     $("#cf2").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	 }); 
+	 });
+$(document).ready(function(){
+	$("a.tg3").click(function() {
+		  $(this.hash).slideToggle("slow");	
+		   $("#slide").show();
+		     $("#tp1").hide();
+		     $("#tp2").hide();
+		     $("#tp4").hide();
+		     $("#tp5").hide();
+		     $("#tp6").hide();
+		     $("#cf1").hide();
+		     $("#cf2").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	 }); 
+	 });
+$(document).ready(function(){
+	$("a.tg4").click(function() {
+		  $(this.hash).slideToggle("slow");	
+		     $("#tp1").hide();
+		     $("#tp2").hide();
+		     $("#tp3").hide();
+		     $("#tp5").hide();
+		     $("#tp6").hide();
+		     $("#cf1").hide();
+		     $("#cf2").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	 }); 
+	 });
+$(document).ready(function(){
+	$("a.tg5").click(function() {
+		  $(this.hash).slideToggle("slow");	
+		     $("#tp1").hide();
+		     $("#tp2").hide();
+		     $("#tp3").hide();
+		     $("#tp4").hide();
+		     $("#tp6").hide();
+		     $("#cf1").hide();
+		     $("#cf2").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	 }); 
+	 });
+$(document).ready(function(){
+	$("a.tg6").click(function() {
+		  $(this.hash).slideToggle("slow");	
+		     $("#tp1").hide();
+		     $("#tp2").hide();
+		     $("#tp3").hide();
+		     $("#tp4").hide();
+		     $("#tp5").hide();
+		     $("#cf1").hide();
+		     $("#cf2").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	 }); 
+	 });
+ 
+ //Its Certificate.....validation..
+$(document).ready(function(){
+	 $("a.cg1").click(function(){
+		 $(this.hash).slideToggle("slow");
+		 $("#tp1").hide();
+	     $("#tp2").hide();
+	     $("#tp3").hide();
+	     $("#tp4").hide();
+	     $("#tp5").hide();
+	     $("#tp6").hide();
+	     $("#cf2").hide();
+	     $("#cf3").hide();
+	     $("#cf4").hide();
+	     $("#plc1").hide();
+		 $("#plc2").hide();
+		 $("#ut1").hide();
+		  $("#ut2").hide();
+		  $("#ut3").hide();
+		  $("#ut4").hide();
+		  $("#ut5").hide();
+		  $("#uc1").hide();
+		  $("#uc2").hide();
+		  $("#uc3").hide();
+		  $("#uc4").hide();
+		  $("#up1").hide();
+		  $("#up2").hide();
+		  $("#up3").hide();
+		  $("#corp1").hide();
+		  $("#corp2").hide();
+		  $("#corp3").hide();
+		  $("#corp4").hide();
+		  $("#corp5").hide();
+		  
+	 });
+ });
+        $(document).ready(function(){
+	     $("a.cg2").click(function(){
+	    	 $(this.hash).slideToggle("slow");
+	    	 $("#tp1").hide();
+		     $("#tp2").hide();
+		     $("#tp3").hide();
+		     $("#tp4").hide();
+		     $("#tp5").hide();
+		     $("#tp6").hide();
+		     $("#cf1").hide();
+		     $("#cf3").hide();
+		     $("#cf4").hide();
+		     $("#plc1").hide();
+			 $("#plc2").hide();
+			 $("#ut1").hide();
+			  $("#ut2").hide();
+			  $("#ut3").hide();
+			  $("#ut4").hide();
+			  $("#ut5").hide();
+			  $("#uc1").hide();
+			  $("#uc2").hide();
+			  $("#uc3").hide();
+			  $("#uc4").hide();
+			  $("#up1").hide();
+			  $("#up2").hide();
+			  $("#up3").hide();
+			  $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+	     });
+        });
+        
+        $(document).ready(function(){
+		     $("a.cg3").click(function(){
+		    	 $(this.hash).slideToggle("slow");
+		    	 $("#tp1").hide();
+			     $("#tp2").hide();
+			     $("#tp3").hide();
+			     $("#tp4").hide();
+			     $("#tp5").hide();
+			     $("#tp6").hide();
+			     $("#cf1").hide();
+			     $("#cf2").hide();
+			     $("#cf4").hide();
+			     $("#plc1").hide();
+				 $("#plc2").hide();
+				 $("#ut1").hide();
+				  $("#ut2").hide();
+				  $("#ut3").hide();
+				  $("#ut4").hide();
+				  $("#ut5").hide();
+				  $("#uc1").hide();
+				  $("#uc2").hide();
+				  $("#uc3").hide();
+				  $("#uc4").hide();
+				  $("#up1").hide();
+				  $("#up2").hide();
+				  $("#up3").hide();
+				  $("#corp1").hide();
+				  $("#corp2").hide();
+				  $("#corp3").hide();
+				  $("#corp4").hide();
+				  $("#corp5").hide();
+				  
+		     });
+        });
+        $(document).ready(function(){
+			     $("a.cg4").click(function(){
+			    	 $(this.hash).slideToggle("slow");
+			    	 $("#tp1").hide();
+				     $("#tp2").hide();
+				     $("#tp3").hide();
+				     $("#tp4").hide();
+				     $("#tp5").hide();
+				     $("#tp6").hide();
+				     $("#cf1").hide();
+				     $("#cf2").hide();
+				     $("#cf3").hide();
+				     $("#ut1").hide();
+					  $("#ut2").hide();
+					  $("#ut3").hide();
+					  $("#ut4").hide();
+					  $("#ut5").hide();
+					  $("#uc1").hide();
+					  $("#uc2").hide();
+					  $("#uc3").hide();
+					  $("#uc4").hide();
+					  $("#up1").hide();
+					  $("#up2").hide();
+					  $("#up3").hide();
+					  $("#corp1").hide();
+					  $("#corp2").hide();
+					  $("#corp3").hide();
+					  $("#corp4").hide();
+					  $("#corp5").hide();
+					  
+			     });
+		     });
+        //Placement validation...
+        $(document).ready(function(){
+		     $("a.plcg1").click(function(){
+		    	 $(this.hash).slideToggle("slow");  
+		    	 $("#plc2").hide();
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	 $("#cf1").hide();
+		    	 $("#cf2").hide();
+		    	 $("#cf3").hide();
+		    	 $("#cf4").hide();
+		    	 $("#ut1").hide();
+		   	  $("#ut2").hide();
+		   	  $("#ut3").hide();
+		   	  $("#ut4").hide();
+		   	  $("#ut5").hide();
+		   	  $("#uc1").hide();
+		   	  $("#uc2").hide();
+		   	  $("#uc3").hide();
+		   	  $("#uc4").hide();
+		   	  $("#up1").hide();
+		   	  $("#up2").hide();
+		   	  $("#up3").hide();
+		   	 $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+		     });
+        });
+        
+        $(document).ready(function(){
+		     $("a.plcg2").click(function(){
+		    	 $(this.hash).slideToggle("slow");  
+		    	 $("#plc1").hide();
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	 $("#cf1").hide();
+		    	 $("#cf2").hide();
+		    	 $("#cf3").hide();
+		    	 $("#cf4").hide();
+		    	 $("#ut1").hide();
+		   	  $("#ut2").hide();
+		   	  $("#ut3").hide();
+		   	  $("#ut4").hide();
+		   	  $("#ut5").hide();
+		   	  $("#uc1").hide();
+		   	  $("#uc2").hide();
+		   	  $("#uc3").hide();
+		   	  $("#uc4").hide();
+		   	  $("#up1").hide();
+		   	  $("#up2").hide();
+		   	  $("#up3").hide();
+		   	 $("#corp1").hide();
+			  $("#corp2").hide();
+			  $("#corp3").hide();
+			  $("#corp4").hide();
+			  $("#corp5").hide();
+			  
+		     });
+       });
+        //University alliance.......
+        //Training
+        $(document).ready(function(){
+		     $("a.utg1").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	 
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+        });
+        $(document).ready(function(){
+		     $("a.utg2").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	 
+		    	  $("#ut1").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+       });
+        $(document).ready(function(){
+		     $("a.utg3").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	 
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+       });
+        $(document).ready(function(){
+		     $("a.utg4").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+       });
+        $(document).ready(function(){
+		     $("a.utg5").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	 
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+       });
+ 		//Certificate.......
+ 		 $(document).ready(function(){
+		     $("a.ucg1").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	//  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+ 		 });
+ 		$(document).ready(function(){
+		     $("a.ucg2").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	 // $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+		 });
+ 		$(document).ready(function(){
+		     $("a.ucg3").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	 // $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+		 });
+ 		$(document).ready(function(){
+		     $("a.ucg4").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	 // $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+		 });
+ 		//placement.....
+ 		$(document).ready(function(){
+		     $("a.upg1").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	 // $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+		 });
+ 		$(document).ready(function(){
+		     $("a.upg2").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	//  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		     });
+		 });
+ 		$(document).ready(function(){
+		     $("a.upg3").click(function(){
+		    	 $(this.hash).slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#corp1").hide();
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		    	  
+		    	//  $("#up3").hide();
+		     });
+		 });
+		
+ 		//Corporate Training....
+ 		
+$(document).ready(function(){
+		     $("a.crpg1").click(function(){
+		    	
+		   
+		    	// $("#slides2").show();
+		    	
+		    	 $("#regstr8").slideToggle("slow"); 
+		    	 $("#tp1").hide();
+		    	 $("#tp2").hide();
+		    	 $("#tp3").hide();
+		    	 $("#tp4").hide();
+		    	 $("#tp5").hide();
+		    	 $("#tp6").hide();
+		    	  $("#cf1").hide();
+		    	  $("#cf2").hide();
+		    	  $("#cf3").hide();
+		    	  $("#cf4").hide();
+		    	  $("#plc1").hide();
+		    	  $("#plc2").hide();
+		    	  $("#ut1").hide();
+		    	  $("#ut2").hide();
+		    	  $("#ut3").hide();
+		    	  $("#ut4").hide();
+		    	  $("#ut5").hide();
+		    	  $("#uc1").hide();
+		    	  $("#uc2").hide();
+		    	  $("#uc3").hide();
+		    	  $("#uc4").hide();
+		    	  $("#up1").hide();
+		    	  $("#up2").hide();
+		    	  $("#up3").hide();
+		    	 
+		    	  $("#corp2").hide();
+		    	  $("#corp3").hide();
+		    	  $("#corp4").hide();
+		    	  $("#corp5").hide();
+		     });
+});
+$(document).ready(function(){
+    $("a.crpg2").click(function(){
+    	 $("#regstr9").slideToggle("slow"); 
+   	 $("#tp1").hide();
+	 $("#tp2").hide();
+	 $("#tp3").hide();
+	 $("#tp4").hide();
+	 $("#tp5").hide();
+	 $("#tp6").hide();
+	  $("#cf1").hide();
+	  $("#cf2").hide();
+	  $("#cf3").hide();
+	  $("#cf4").hide();
+	  $("#plc1").hide();
+	  $("#plc2").hide();
+	  $("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	//  $("#corp2").hide();
+	  $("#corp3").hide();
+	  $("#corp4").hide();
+	  $("#corp5").hide();
+    });
+});
+$(document).ready(function(){
+    $("a.crpg3").click(function(){
+   	 $(this.hash).slideToggle("slow"); 
+   	 $("#tp1").hide();
+	 $("#tp2").hide();
+	 $("#tp3").hide();
+	 $("#tp4").hide();
+	 $("#tp5").hide();
+	 $("#tp6").hide();
+	  $("#cf1").hide();
+	  $("#cf2").hide();
+	  $("#cf3").hide();
+	  $("#cf4").hide();
+	  $("#plc1").hide();
+	  $("#plc2").hide();
+	  $("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	  $("#corp2").hide();
+	  //$("#corp3").hide();
+	  $("#corp4").hide();
+	  $("#corp5").hide();
+    });
+});
+
+
+
+//Login.....
+//...........................................
+$(document).ready(function(){
+    $("a.crpg4").click(function(){
+	 $(this.hash).slideToggle("slow"); 
+    // $("#regstr9").show;
+   	 $("#tp1").hide();
+	 $("#tp2").hide();
+	 $("#tp3").hide();
+	 $("#tp4").hide();
+	 $("#tp5").hide();
+	 $("#tp6").hide();
+	  $("#cf1").hide();
+	  $("#cf2").hide();
+	  $("#cf3").hide();
+	  $("#cf4").hide();
+	  $("#plc1").hide();
+	  $("#plc2").hide();
+	  $("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	  $("#corp2").hide();
+	  $("#corp3").hide();
+	 // $("#corp4").hide();
+	  $("#corp5").hide();
+    });
+});
+$(document).ready(function(){
+    $("a.crpg5").click(function(){
+   	 $(this.hash).slideToggle("slow"); 
+   	 $("#tp1").hide();
+	 $("#tp2").hide();
+	 $("#tp3").hide();
+	 $("#tp4").hide();
+	 $("#tp5").hide();
+	 $("#tp6").hide();
+	  $("#cf1").hide();
+	  $("#cf2").hide();
+	  $("#cf3").hide();
+	  $("#cf4").hide();
+	  $("#plc1").hide();
+	  $("#plc2").hide();
+	  $("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	  $("#corp2").hide();
+	  $("#corp3").hide();
+	  $("#corp4").hide();
+	  $("#frame1").hide();
+	  $("#frame2").hide();
+	  $("#frame3").hide();
+	  $("#frame4").hide();
+	  $("#frame5").hide();
+	 // $("#corp5").hide();
+    });
+});
+ 		
+ //Its show be hide the contents....Login........
+  $(document).ready(function(){
+	$("#log2").click(function(){
+		$("#lo1").toggle("slow");
+		$("#show").hide();
+		  $("#frame1").hide();
+		  $("#frame2").hide();
+		  $("#frame3").hide();
+		  $("#frame4").hide();
+		  $("#frame5").hide();
+		
+	});
+}); 
+ 
+  $(document).ready(function(){
+		$("#en01").click(function(){
+			$("#frame1").toggle("slow");
+			$("#show").hide();
+			//  $("#frame1").hide();
+			  $("#frame2").hide();
+			  $("#frame3").hide();
+			  $("#frame4").hide();
+			  $("#frame5").hide();
+			
+		});
+	});
+  
+  $(document).ready(function(){
+		$("#wal").click(function(){
+			$("#frame2").slideToggle("slow");
+			$("#show").hide();
+			  $("#frame1").hide();
+			//  $("#frame2").hide();
+			  $("#frame3").hide();
+			  $("#frame4").hide();
+			  $("#frame5").hide();
+			
+		});
+	});
+  
+  $(document).ready(function(){
+		$("#intr").click(function(){
+			$("#frame3").fadeIn("slow");
+			$("#show").hide();
+			  $("#frame1").hide();
+			  $("#frame2").hide();
+			//  $("#frame3").hide();
+			  $("#frame4").hide();
+			  $("#frame5").hide();
+			
+		});
+	});
+  
+  $(document).ready(function(){
+		$("#regtr").click(function(){
+			$("#frame4").fadeToggle(3000);
+			$("#show").hide();
+			  $("#frame1").hide();
+			  $("#frame2").hide();
+			  $("#frame3").hide();
+			//  $("#frame4").hide();
+			  $("#frame5").hide();
+			
+		});
+		
+		$(document).ready(function(){
+			$("#plcd").click(function(){
+				$("#frame5").fadeTo("slow", 0.15);
+				$("#show").hide();
+				  $("#frame1").hide();
+				  $("#frame2").hide();
+				  $("#frame3").hide();
+				  $("#frame4").hide();
+				//  $("#frame5").hide();
+				
+			});
+		});
+		$(document).ready(function(){
+			$("#certi").click(function(){
+				$("#frame3").slideToggle("slow");
+				$("#show").hide();
+				  $("#frame1").hide();
+				  $("#frame2").hide();
+				 // $("#frame3").hide();
+				  $("#frame4").hide();
+				  $("#frame5").hide();
+				
+			});
+		});
+	});
+  
+//..
+ $(document).ready(function(){
+			$("#ppt").click(function(){
+				 $("#slide").hide();
+		
+				
+			});
+		});
+ 
+ $(document).ready(function(){
+	 $("#tp1").hide();
+	 $("#tp2").hide();
+	 $("#tp3").hide();
+	 $("#tp4").hide();
+	 $("#tp5").hide();
+	 $("#tp6").hide();
+	  $("#cf1").hide();
+	  $("#cf2").hide();
+	  $("#cf3").hide();
+	  $("#cf4").hide();
+	  $("#plc1").hide();
+	  $("#plc2").hide();
+	  $("#ut1").hide();
+	  $("#ut2").hide();
+	  $("#ut3").hide();
+	  $("#ut4").hide();
+	  $("#ut5").hide();
+	  $("#uc1").hide();
+	  $("#uc2").hide();
+	  $("#uc3").hide();
+	  $("#uc4").hide();
+	  $("#up1").hide();
+	  $("#up2").hide();
+	  $("#up3").hide();
+	  $("#corp1").hide();
+	  $("#corp2").hide();
+	  $("#corp3").hide();
+	  $("#corp4").hide();
+	  $("#corp5").hide();
+	  $("#slide").hide();
+	  $("#vid").hide();
+	  $("#slides2").hide();
+	  $("#lo1").hide();
+	  $("#frame1").hide();
+	  $("#frame2").hide();
+	  $("#frame3").hide();
+	  $("#frame4").hide();
+	  $("#frame5").hide();
+	 $("#regstr").hide();
+	  $("#regstr3").hide();
+	  $("#regstr1").hide();
+	  $("#regstr2").hide();
+  $("#regstr4").hide();
+  $("#regstr5").hide();
+  $("#regstr6").hide();
+  $("#regstr7").hide();
+  $("#regstr9").hide();
+  $("#regstr8").hide();
+
+	  //#lo1
+	});
+ 
+ 
+ $(document).ready(function(){
+		$("#ppts").click(function() {
+	
+			   $("#slide").toggle("slow");
+			     $("#tp1").hide();
+			     $("#tp2").hide();
+			     $("#tp4").hide();
+			     $("#tp5").hide();
+			     $("#tp6").hide();
+			     $("#cf1").hide();
+			     $("#cf2").hide();
+			     $("#cf3").hide();
+			     $("#cf4").hide();
+			     $("#plc1").hide();
+				 $("#plc2").hide();
+				 $("#ut1").hide();
+				  $("#ut2").hide();
+				  $("#ut3").hide();
+				  $("#ut4").hide();
+				  $("#ut5").hide();
+				  $("#uc1").hide();
+				  $("#uc2").hide();
+				  $("#uc3").hide();
+				  $("#uc4").hide();
+				  $("#up1").hide();
+				  $("#up2").hide();
+				  $("#up3").hide();
+				  $("#corp1").hide();
+				  $("#corp2").hide();
+				  $("#corp3").hide();
+				  $("#corp4").hide();
+				  $("#corp5").hide();
+				  
+		 }); 
+		 });
+</script>
+
+
+</head>
+<body>
+<header>
+
+<div class="container">
+ <div> 
+<a href="index.html">
+   <img src="resources/images/conns.jpg" border="0" width="300px" height="80px" style="margin-left: 34px;margin-top: 20px;"/></a> 
+
+   <img id="right" src="resources/images/stars.png" width="80px" height="45px" style="margin-left: 80px;"></img><br>
+ <span id="left"> where <span style="color:#ed6363"> Employees</span> enjoy.<span style="color:#42c2cf">
+               Customers</span> rejoice </span>
+
+  </div></div>
+ </header>
+   <div class="menus">
+   
+   <div id="menu01">
+   
+<div id="mainmenu"> <img alt="tech" src="resources/images/2.png" width="40px;" height="30px" style="text-align: center;"><br> <a id="tec" href="#">TECHNOLOGY TRAINING for<span style="font-size: 8px;">(SAP)</span></a></div>
+<div id="mainmenu1"> <img alt="tech" src="resources/images/3.png" width="40px;" height="30px" style="text-align: center;"><br><a id="prd" href="product.html">PRODUCT ENGINEERING</a></div>
+<div id="mainmenu2"> <img alt="tech" src="resources/images/4.png" width="40px;" height="30px" style="text-align: center;"><br><a id="bus" href="business.html">BUSINESS & IT CONSULTING</a></div>
+<div id="mainmenu3"> <img alt="tech" src="resources/images/5.png" width="40px;" height="30px" style="text-align: center;"><br><a id="tal" href="talent.html">TALENT SOURCING</a></div>
+<!--  <div id="mainmenu4" class="login"> <img alt="tech" src="images/login.png" width="15px;" height="20px" style="text-align: center; margin-bottom: -25px;" class="login"><a style="color: white;">Login</a></div> -->
+<div id="login1">
+<li id="logg" style="padding-left:130px;;"> 
+    <img src="resources/images/login.png" />
+    <span id="login"><a id="log2" href="#" style="color: white;text-decoration: none"> Login</a>  </span> 
+    </li>
+    </div>
+    <!-- Slides of images...... -->
+    
+    
+   
+    <!--  ........Training contents.....................................*************************-->
+    <div id="tp1"> Hi and thank you for the great information!
+
+I was hoping to use this to replace an iFrame that I am using in a wordpress page also. The iframe is very slow and from all of my research I didn't think that you could do this. But I believe that it's what I need. I would love to able to add a few changes to the CSS of the ajaxed page also! 
+
+Would someone please show me an example of how to load my external page into WP without having to use the iframe? I am not a JS developer like most of you but I do love my CSS. Any information would be greatly appreciated!
+
+Thanks again,
+
+Brent
+
+</div>
+ <div id="tp2"> Training Infrastructure
+ Training Infrastructure
+ Training Infrastructure
+ Training Infrastructure Training Infrastructure
+ Training Infrastructure Training Infrastructure Training Infrastructurev Training Infrastructure Training Infrastructure
+
+</div>
+<div id="tp3">Training Schedules Training Schedules Training Schedules Training Schedules
+Training Schedules Training Schedules Training Schedules Training Schedules
+Training Schedules Training Schedules Training Schedules Training Schedules
+
+ </div>
+
+
+ 
+ 
+<div id="tp4">Training Pool</div>
+<div id="tp5">Why Connaissance</div>
+<div id="tp6">Register for training</div>
+
+ <div id="regstr9">
+<h5 style="color: red">SAP SALES AND Distribution(SD)</h5>
+<table >
+  <tr>
+    <th class="color" width="35%"></th>
+    <th class="color1" width="16%">jan</th>
+<th class="color"></th>
+    <th class="color2" width="18%">feb</th>
+<th class="color"></th>
+    <th  class="color3" width="18%">march</th>
+    <th class="color" width="3%"></th>
+  </tr>
+  <tr>
+
+    <td class="color7">start date </td>
+    <td class="color4">16,jan</td>
+<th class="color7"></th>
+    <td class="color5">15,jan</td>
+<th class="color7"></th>
+    <td class="color6">16,jan</td>  
+    <th class="color7" width="3%"></th>
+  </tr>
+  <tr>
+    <td class="color7">end date </td>
+
+    <td class="color4">16,jan</td>
+<th class="color7"></th>
+    <td class="color5">15,jan</td>
+<th class="color7"></th>
+    <td class="color6">16,jan</td>
+    <th class="color7" width="3%"></th>   
+  </tr>
+ <tr>
+    <td class="color7">last date <br>to register </td>
+    <td class="color4">16,jan</td>
+<th class="color7"></th>
+    <td class="color5">15,jan</td>
+<th class="color7"></th>
+    <td class="color6">16,jan</td>
+    <th class="color7" width="3%"></th>
+  </tr>
+ <tr>
+    <td class="color7"></td>
+
+    <td class="color4"></td>
+<th  class="color7"style="width:15px"></th>
+    <td class="color2" style="border-radius:5px";><a href="#">register</a></td>
+<th class="color7" style="width:15px"></th>
+    <td class="color3"style="border-radius:5px";><a href="#">register</a></td>
+       <th class="color7" width="3%"></th>
+<th></th>
+  </tr>
+</table>
+
+<div id="square"><span style="color:black;margin-left:10px;">closed</span></div>&nbsp;&nbsp;
+<div id="square1"><span style="color:black;margin-left:15px;">open</span></div> &nbsp;&nbsp;
+<div id="square2"><span style="color:black;margin-left:15px;">planned</span></div> 
+<a href="#"><img src="resources/images/qwe.png" style="width:30px;margin-left:320px;margin-top:-150px;"></img></a><ul>
+<li style="font-size:10px;margin-left:320px;margin-top:-150px;">training fees doesnot include cab,stay, <br>sightseeing or tour cost,for the respective service are extra,<br>these services have to be planned in <br> advance,so please consult your spDC for any details you may require</li>
+</ul>
+<div id="square3">hi how are you</div>
+
+<div style="width: 60%; height: 60px;background-color: white;float: right;margin-right: 580px;">
+<nav id="images1">
+
+
+<ul >
+  <li id="ttt"><a><img alt="" src="images/coursecontent.png" width="30px"><br>Course<br> Content</a></li>
+ <li id="ttt"><a><img alt="" src="images/offers.png" width="30px"><br>Offers</a></li>
+  <li id="ttt"> <a><img alt="" src="images/courseoverview.png" width="30px"><br>course overview <br>by trainer</a></li>
+    <li id="ttt"><a><img alt="" src="images/alumni feedback.png" width="30px"><br>Alumni<br> feedback</a></li>
+     <li id="ttt"><a><img alt="" src="images/share.png" width="30px"><br>share</a></li>
+ 
+</ul>
+
+</nav>
+</div>
+<div style="width: 60%; height: 60px;background-color: white;float: right;margin-right: 580px;">
+<nav id="images1">
+
+
+<ul >
+  <li id="ttt"><a><img alt="" src="images/trainning infrastruc.png" width="30px"><br>Training<br>infrastructure</a></li>
+ <li id="ttt"><a><img alt="" src="images/why.png" width="30px"><br>why you <br>should join by<br> already joined</a></li>
+  <li id="ttt"> <a><img alt="" src="images/references.png" width="30px"><br>Refer Us</a></li>
+    <li id="ttt"><a><img alt="" src="images/alumni feedback.png" width="30px"><br>Mobile App<br> Download<br> feedback</a></li>
+    
+ 
+</ul>
+
+</nav>
+</div>
+
+
+<!-- <a href="#"><ul><li><img alt="" src="images/offers.png" style="width:20px;padding-top:5px;margin-left:-30px;"/></li><br>
+<li style="font-size:10px;padding-top:25px;margin-left:-30px">Offers</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/courseoverview.png" style="width:20px;margin-top:-25px;margin-left:25px;"></img></li><br>
+<li style="font-size:10px;padding-top:5px;margin-left:5px">course overview <br>by trainer</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/alumni feedback.png" style="width:20px;margin-top:-55px;margin-left:20px;"></img></li><br>
+<li style="font-size:10px;margin-top:-20px;margin-left:-10px;margin-left:15px;">Alumni<br> feedback</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/share.png" style="width:20px;margin-top:-85px;margin-left:15px;"></img></li><br>
+<li style="font-size:10px;margin-top:-30px;margin-left:170px;">share</li><br></ul></a>
+
+<a href="#"><ul><li>
+<img alt="" src="images/trainning infrastruc.png" style="width:20px;margin-top:-20px;margin-left:-80px;"></img><br></li>
+<li style="font-size:10px;padding-top:20px;margin-left:-80px;">Training<br>infrastructure</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/why.png" style="width:20px;margin-top:-25px;;margin-left:5px;"/></li><br>
+<li style="font-size:10px;margin-top:-8px;margin-left:1px">why you <br>should join by<br> already joined</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/references.png" style="width:20px;margin-top:-65px;margin-left:5px;"></img></li><br>
+<li style="font-size:10px;margin-top:-15px;margin-left:10px">Refer Us</li></ul></a>
+<a href="#"><ul><li><img alt="" src="images/mobile app download.png" style="width:20px;margin-top:-95px;margin-left:60px;"></img></li><br>
+<li style="font-size:10px;margin-top:-35px;margin-left:125px;">Mobile App<br> Download</li></ul></a> -->
+
+
+ </div>
+ 
+ 
+ 
+
+<!-- ***************************Slide1**************************** -->
+<div class="con" id="slide">
+  <br>
+  <div id="myCarousel" class="carousel video" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    
+    
+    
+    <div class="carousel-inner" role="slider">
+
+      <div class="item active">
+        <img src="img1/3.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h6>Chania</h6>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img1/4.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h6>Chania</h6>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="img1/1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h6>Flowers</h6>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img1/2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h6>Flowers</h6>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<!-- Slide2 -->
+<!-- <div id="slides2">
+<div id="slideshow" class="cycle-slideshow"
+data-cycle-fx="fade"data-cycle-speed="600"
+data-cycle-timeout="3000"
+data-cycle-pager="#pager"
+data-cycle-pager-template="<a href='#'><img src='{{src}}' height=50 width=50 />"
+data-cycle-next="#next"
+data-cycle-prev="#prev"
+data-cycle-manual-fx="scrollHorz"
+data-cycle-manual-speed="400"
+data-cycle-pager-fx="fade">
+
+<img src="images01/Awesome Mountain.jpeg"/>
+<img src="images01/back.jpg"/>
+<img src="images01/footer-photo1.jpg"/>
+<img src="images01/footer-photo1.jpg"/>
+<img src="images01/footer-photo1.jpg"/>
+</div>
+<div id="pager"></div>
+<img id="prev"src="images01/prev1.svg"/>
+<img id="next"src="images01/next1.svg"/>
+</div> -->
+<!-- ....Certificate Contents.... -->
+
+<div id="cf1">Why certificate</div>
+<div id="cf2">Levels of Certificate</div>
+<div id="cf3">Sample Certificate</div>
+<div id="cf4">Certificate T&C</div>
+
+<!-- ....Placement Contents.... -->
+<div id="plc1">Our Placement Philosophy</div>
+<div id="plc2">Companies</div>
+
+<!-- ......Corporate Training..... -->
+<div id="corp1">Delivery Methodology1</div>
+<div id="corp2">Delivery Methodology2</div>
+<div id="corp3">Delivery Methodology3</div>
+<div id="corp4">Delivery Methodology4</div>
+<div id="corp5">
+gouri
+
+</div>
+
+<!-- ********University Alliase********* -->
+<!-- -------Training-------- -->
+<div id=ut1>Trainingggg1</div>
+<div id=ut2>Trainingggg2</div>
+<div id=ut3>Trainingggg3</div>
+<div id=ut4>Trainingggg4</div>
+<div id=ut5>Trainingggg5</div>
+
+<!-- ----Certificate------- -->
+<div id="uc1">Certificate1</div>
+<div id="uc2">Certificate2</div>
+<div id="uc3">Certificate3</div>
+<div id="uc4">Certificate4</div>
+
+<!-- -----Placement----- -->
+<div id="up1">Placement1</div>
+<div id="up2">Placement2</div>
+<div id="up3">Placement3</div>
+<div> </div>
+
+
+
+<!-- Register5.................................................................................................. -->
+  <div id="regstr5">
+ <img style="float: right; margin-right: 600px" alt="" src="images/rupee.png" ><br>
+ <span  style="float: right; margin-right: 610px;font-size: 7px;">Cashless<br> Registertion</span>
+<h3 style="color: red;"><b>REGISTER NOW</b></h3>
+
+<h5>SAP MM | FEBRUARY 2016</h5>
+<p style="font-size: 10px;">Material management-Procrument with SAP ERP 6.0 EhP6<br>
+Training Starts on:00.00.0000 Trainig Ends:00:00:0000<br>
+Training Fee Incl:Tax:Rs 3,37,080 - & Certification Fee Incl:Tax:Rs 33,806</p>
+
+<p style="font-size: 10px; color: 660066;">Do you want to undergo Trainging for
+<input type="radio" name="sex" value="male">Full programm
+<input type="radio" name="sex" value="female">Partial programm</p>
+
+<!-- <table style="background-color:silver; width: 20%;">
+  <tr style=" width: 30%; font-size: 9px;">
+    <td class="color">CourseCode</td>
+    <td class="color">CourseName</td>		
+    <td class="color">Duration(Days)</td>
+    <td class="color">Select</td>
+  </tr>
+  <tr>
+<tr style="font-size: 8px;">
+<td>000001</td>
+	 <td>SAP MM</td>		
+    <td>12</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000002</td>
+	 <td>SAP 01</td>		
+    <td>19</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000003</td>
+	 <td>SAP 02</td>		
+    <td>14</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+</table> -->
+<!-- <p>
+<input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="lastname"><br></p>
+<p><input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename"></p>
+ -->
+ <form >
+  *<input style="height:15px; color: black;font-size: 10px;"  type="text" size="18px;"placeholder="First Name">
+   *<input style="height:15px; font-size: 10px;"  type="text" size="18pxx;"placeholder="Midle Name">
+
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Last Name"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Mobile">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Email"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Permanent Location">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Current Location">
+<br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="20px;"placeholder="Current Location Address"><br>
+ <input type="radio" name="visa" value="visa"> <img alt="" src="images/visa-curved-32px.png" width="30px;">&nbsp;<input type="radio" name="visa" value="visa">&nbsp; <img alt="" src="images/maestro-curved-32px.png" width="30px;"> &nbsp;<input type="radio" name="visa" value="visa">  <img alt="" src="images/mastercard-curved-32px.png" width="30px;"> &nbsp; <input style="size:;" type="radio" name="visa" value="visa"><span style="font-size: 9px; padding: 2px; color: skyblue;">NET BANKING</span><br>
+  <button style="width:4%;height:20px;padding: 4px;font-size: 8px;background-color:#663399;color: white">PAY NOW</button><br>
+
+  <img alt="" src="images/payumoney-1.png" width="8%;">
+
+</form>
+</div>
+
+
+<!-- Register4.................................................................................................. -->
+  <div id="regstr4">
+ <img style="float: right; margin-right: 600px" alt="" src="images/rupeecross.png" ><br>
+ <span  style="float: right; margin-right: 610px;font-size: 7px;">Cashless<br> Registertion</span>
+<h3 style="color: red;"><b>REGISTER NOW</b></h3>
+
+<h5>SAP MM | FEBRUARY 2016</h5>
+<p style="font-size: 10px;">Material management-Procrument with SAP ERP 6.0 EhP6<br>
+Training Starts on:00.00.0000 Trainig Ends:00:00:0000<br>
+Training Fee Incl:Tax:Rs 3,37,080 - & Certification Fee Incl:Tax:Rs 33,806</p>
+
+<p style="font-size: 10px; color: 660066;">Do you want to undergo Trainging for
+<input type="radio" name="sex" value="male">Full programm
+<input type="radio" name="sex" value="female">Partial programm</p>
+
+<!-- <table style="background-color:silver; width: 20%;">
+  <tr style=" width: 30%; font-size: 9px;">
+    <td class="color">CourseCode</td>
+    <td class="color">CourseName</td>		
+    <td class="color">Duration(Days)</td>
+    <td class="color">Select</td>
+  </tr>
+  <tr>
+<tr style="font-size: 8px;">
+<td>000001</td>
+	 <td>SAP MM</td>		
+    <td>12</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000002</td>
+	 <td>SAP 01</td>		
+    <td>19</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000003</td>
+	 <td>SAP 02</td>		
+    <td>14</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+</table> -->
+<!-- <p>
+<input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="lastname"><br></p>
+<p><input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename"></p>
+ -->
+ <form >
+  *<input style="height:15px; color: black;font-size: 10px;"  type="text" size="18px;"placeholder="First Name">
+   *<input style="height:15px; font-size: 10px;"  type="text" size="18pxx;"placeholder="Midle Name">
+
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Last Name"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Mobile">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Email"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Permanent Location">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="18px;"placeholder="Current Location">
+<br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="20px;"placeholder="Current Location Address"><br>
+  <button style="width:15%;height:20px;padding: 4px;font-size: 8px;background-color:#663399;color: white">BLOCK YOUR SEAT NOW</button>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Registertion pages -->
+<!-- <div id="gtr">
+ <img alt="" src="img1/Untitled-1.png" >
+ </div> -->
+  <div id="regstr">
+ <img style="float: right; margin-right: 600px" alt="" src="images/rupeecross.png" ><br>
+ <span  style="float: right; margin-right: 610px;font-size: 7px;">Cashless<br> Registertion</span>
+<h5 style="color: red;"><b>REGISTER NOW</b></h5>
+
+<h6>SAP MM | FEBRUARY 2016</h6>
+<p style="font-size: 9px;">Material management-Procrument with SAP ERP 6.0 EhP6<br>
+Training Starts on:00.00.0000 Trainig Ends:00:00:0000<br>
+Training Fee Incl:Tax:Rs 3,37,080 - & Certification Fee Incl:Tax:Rs 33,806</p>
+
+<p style="font-size: 8px; color: 660066;">Do you want to undergo Trainging for
+<input type="radio" name="sex" value="male">Full programm
+<input type="radio" name="sex" value="female">Partial programm</p>
+
+<table style="background-color:silver; width: 20%;">
+  <tr style=" width: 30%; font-size: 9px;">
+    <td class="color">CourseCode</td>
+    <td class="color">CourseName</td>		
+    <td class="color">Duration(Days)</td>
+    <td class="color">Select</td>
+  </tr>
+  <tr>
+<tr style="font-size: 8px;">
+<td>000001</td>
+	 <td>SAP MM</td>		
+    <td>12</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000002</td>
+	 <td>SAP 01</td>		
+    <td>19</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+<tr style="font-size: 8px;">
+<td>000003</td>
+	 <td>SAP 02</td>		
+    <td>14</td>
+<td>    <input type="radio" name="sex" value="male"></td>
+</tr>
+</table>
+<!-- <p>
+<input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="lastname"><br></p>
+<p><input  style="height:18px;width:10%;font-size:8pt;"type="text" placeholder="firstname">&nbsp&nbsp<input style="height:18px;width:10%;font-size:8pt;" type="text" placeholder="midlename"></p>
+ -->
+ <form >
+  *<input style="height:15px; font-size: 10px; color: black;"  type="text" size="16px;"placeholder="firstname">
+   *<input style="height:15px; font-size: 10px;"  type="text" size="16pxx;"placeholder="midlename">
+
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="lastname"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="mobile">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="email"><br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="permanent location">
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="current location">
+<br>
+ *<input style="height:15px; font-size: 10px;"  type="text" size="16px;"placeholder="current location address">
+ &nbsp <button style="width:15%;height:20px;padding: 4px;font-size: 8px;background-color:#663399;color: white">BLOCK YOUR SEAT NOW</button>
+</form>
+</div>
+
+
+<!-- Register3page.......................................................................................................................................... -->
+ <div id="regstr3">
+ <!-- <span style="color: red;">SAP MM (MATERIAL MANAGEMENT)</span><br>
+ <span style="color: red;">PROCUREMENT WITH SAP ERP6.0 EHP6</span><br>
+<p><input type="checkbox" style="background-color: green;"> Confromed on february 05,201</p> -->
+<!--   <img alt="" src="images/rupeecross.png" width="10%" height="45px;"><span style="padding: 0 50px">&nbsp;</span>
+<img alt="" src="images/rupee.png" width="10%" height="45px;"></p>
+<p> <span style="color: red;font-size: 10px;">CASHLESS REGISTRATION</span><span style="padding: 0 30px">&nbsp;</span>
+<span style="color: #663399;font-size: 10px;">CASH REGISTRATION</span><br -->
+
+
+<div class="container">
+  <span style="color: red; font-size:18px;">SAP MM (MATERIAL MANAGEMENT)</span><br>
+ <span style="font-size:18px;">PROCUREMENT WITH SAP ERP6.0 EHP6</span><br>
+<p style="font-size: 10PX;" ><input type="checkbox" style="background-color: green;"> Confromed on february 05,201</p>
+  <div class="row">
+ 
+    <div class="col-sm-3">
+     <img alt="" src="images/rupeecross.png" width="35%" height="55px;"><br>
+      <span style="color: red;font-size: 10px;">CASHLESS REGISTRATION</span>
+      <p style="font-size: 10px;">This registration will only block your seat till 25-01-2016 and will get automatically cancel if you don't pay the course fee by then</p>
+    
+    </div>
+  
+    <div class="col-sm-3">
+    <img alt="" src="images/rupee.png" width="35%" height="55px;"><br>
+       <span style="color: #663399;font-size: 10px;">CASH REGISTRATION</span>
+      <p style="font-size: 10px;">This registration will get <br> Your seat confirmed <a href="#">Cancellation policy</a> will be applicable if you wish to cancel your seat</p>
+   
+    </div>
+   
+</div>
+</div>
+ <p style="font-size: 10PX;"> WE DONOT ACCEPT CASH.<BR>
+    WE ACCEPT ANY NON CASH FORMAT <BR>
+    LINK CREDIT OR DEBIT</p>
+    
+ 
+ </div>
+ 
+ 
+
+ 
+ <div id="regstr8">
+ <h4 style="color: red;">REGISTER NOW</h4>
+ <div class="outer-div">
+ <p style="color: white;">YOU SHOULD KNOW THESE BEFORE YOU BOOK YOUR SEAT<BR>
+ FOR AN SAP TRAINING PROGRAM AT CONNCAISSANCE IT</p><br>
+
+<div class="inner-div">
+
+ 
+ 
+ </div>
+ <br>
+
+ <p style="color: white; padding: 8px;">I declare that I shall be attending the training on my own and have read all the <br> terms of reference condtions & accept them by clicking 'I AGREE' button here
+<br>
+<button style="color: black; margin-right: -350px;">I AGREE</button><button style="color: black;float: right;margin-right: 130px;">I Don't AGREE</button></p>
+
+</div>
+
+ </div>
+ 
+ 
+ 
+<!-- //Registration page2................................................................................................................................... -->
+
+  <div id="regstr1">
+
+
+
+<img  style="padding: 6px; margin-left:40px; " src="images/Untitled-1.png" width="60px; ">
+  
+  <div style="float: right; margin-right:800px; padding: 8px;">
+  <form action="">
+<p style="font-size: 8px;">Instruct led class Raoom based training are schedule till<br>
+march 2016.You can leave your details <a style="color: #663399;">here</a> if you want us <br>
+to keep you portal when we come up with our new schedul</p>
+<h6 style="color:#660066;font-size: 10px; ">Leave your details below</h6>
+<span style="font-size: 7px;">First Name</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+<span style="padding: 0 40px">&nbsp;</span> <span style="font-size: 7px;">Last Name</span>&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;"><br>
+<span style="font-size: 7px;">Contact</span>&nbsp&nbsp &nbsp <input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+  <span style="padding: 0 44px">&nbsp;</span> <span style="font-size: 7px;">Email</span> &nbsp <input style="height:15px; font-size: 10px;"  type="text" size="16px;"><br>
+   
+<p style="font-size: 9px;">If you want us to keep you posted when we come up with our new schedule<button style="background-color: #663399;font-size:8px; color: white;">Submit</button></p>
+<p style="font-size: 9px; color: #660066;">Search by Module<select  id="styled-select">
+    <option value="" default selected>Choose from the list</option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option>
+</select>
+<p style="font-size: 9px; color: #660066;"> I Don't know which module I am suitable for <input size="4px" type="radio" name="gg"> </p>
+
+<p><span style="font-size: 7px;">First Name</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;" onfocus="focus()">
+<span style="padding: 0 44px">&nbsp;</span><span style="font-size: 7px;">Email</span>&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;"></p>
+&nbsp&nbsp&nbsp<span style="font-size: 7px;">Contact</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">  <span style="padding: 0 40px">&nbsp;</span>
+
+<span style="padding: 0 10px;font-size: 5px;">Age</span><select  id="styled-select">
+    <option value="" default selected></option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option></select></p>
+   
+   
+  <p> <span style="padding: 0 8px">&nbsp;</span>
+    
+    <span style="font-size: 8px;">Total Work Exp.</span><select  id="styled-select">
+   <option value="" default selected></option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option></select>
+
+   <span style="padding: 0 10px">&nbsp;</span>
+  
+     <span style="font-size: 8px;">In present company since</span>
+   <select id="styled-select"  style="size: 1px;">
+    <option value="" default selected></option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option></select></p>
+    
+    <span style="font-size: 7px;">Industry</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+    
+     <span style="padding: 0 50px">&nbsp;</span> 
+        <span style="font-size: 8px;">Job type</span> <select  id="styled-select">
+    <option value="" default selected></option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option></select><br>
+    
+    <button style="float: right;  width:10%; font-size: 8px;background-color: #663399;color: white;">submit</button>
+    
+</p>
+
+</div>
+
+
+
+
+
+ 
+</div>
+
+
+<!-- //Registration page7................................................................................................................................... -->
+
+  <div id="regstr7">
+
+
+
+<img  style="padding: 9px; margin-left:50px; " src="images/Untitled-1.png" width="80px; ">
+  
+  <div style="float: right; margin-right:758px; padding: 10px;">
+  <form action="">
+<p style="font-size: 15px;">Instruct led class Raoom based training are schedule till<br>
+march 2016.You can leave your details <a style="color: #663399;">here</a> if you want us <br>
+to keep you portal when we come up with our new schedul</p><br>
+<!-- <h6 style="color:#660066;font-size: 16px; ">Leave your details below</h6>
+<span style="font-size: 14px;">First Name</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+<span style="padding: 0 40px">&nbsp;</span> <span style="font-size: 14px;">Last Name</span>&nbsp<input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+<span style="font-size: 14px;">Contact</span>&nbsp&nbsp &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;">
+  <span style="padding: 0 44px">&nbsp;</span> <span style="font-size: 14px;">Email</span> &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+   
+<p style="font-size: 14px;">If you want us to keep you posted when we come up with our new schedule<button style="background-color: #663399;font-size:8px; color: white;">Submit</button></p> -->
+<p style="font-size:14px; color: #660066;">Search by Module<select  id="styled-select">
+    <option value=""  selected>Choose from the list</option>
+    <option value="gg">Course1</option>
+    <option value="gg">Course2</option>
+    <option value="jj">Course3</option>
+    
+    <option value="gg">Course4</option>
+    <option value="gg">Course5</option>
+    <option value="jj">Course6</option>
+</select><br>
+<p style="font-size:14px; color: #660066;"> I Don't know which module I am suitable for <input size="4px" type="radio" name="gg"> </p>
+<!-- <span style="color: red;">SAP SALES & DISTRIBUTION(SD)</span>
+<span style="font-size: 8px;">CLICK FOR DETAILS</span><br>
+<span style="font-size: 7px;"></span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">&nbsp&nbsp<button style="background-color: black;color: white; width:15%; height: 15px;font-size: 8px;">Browse</button><br>
+<button style="background-color: #663399;font-size: 8px;width: 15;height: 15px; color: white;">UPLOAD</button>
+
+ -->
+
+
+</div>
+
+
+
+</div>
+
+ <div id="regstr6">
+
+
+
+<img  style="padding: 9px; margin-left:50px; " src="images/Untitled-1.png" width="80px; ">
+  
+  <div style="float: right; margin-right:638px; padding: 10px;">
+  <form action="">
+<p style="font-size: 15px;">Instruct led class Raoom based training are schedule till<br>
+march 2016.You can leave your details <a style="color: #663399;">here</a> if you want us <br>
+to keep you portal when we come up with our new schedul</p>
+<h6 style="color:#660066;font-size: 16px; ">Leave your details below</h6>
+<span style="font-size: 14px;">First Name</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+<span style="padding: 0 40px">&nbsp;</span> <span style="font-size: 14px;">Last Name</span>&nbsp<input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+<span style="font-size: 14px;">Contact</span>&nbsp&nbsp &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;">
+  <span style="padding: 0 44px">&nbsp;</span> <span style="font-size: 14px;">Email</span> &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+   
+<p style="font-size: 14px;">If you want us to keep you posted when we come up with our new schedule<button style="background-color: #663399;font-size:8px; color: white;">Submit</button></p>
+<p style="font-size:14px; color: #660066;">Search by Module<select  id="styled-select">
+    <option value=""  selected>Choose from the list</option>
+    <option value="gg">Course1</option>
+    <option value="gg">Course2</option>
+    <option value="jj">Course3</option>
+    
+    <option value="gg">Course4</option>
+    <option value="gg">Course5</option>
+    <option value="jj">Course6</option>
+</select>
+<p style="font-size:14px; color: #660066;"> I Don't know which module I am suitable for <input size="4px" type="radio" name="gg"> </p>
+<!-- <span style="color: red;">SAP SALES & DISTRIBUTION(SD)</span>
+<span style="font-size: 8px;">CLICK FOR DETAILS</span><br>
+<span style="font-size: 7px;"></span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">&nbsp&nbsp<button style="background-color: black;color: white; width:15%; height: 15px;font-size: 8px;">Browse</button><br>
+<button style="background-color: #663399;font-size: 8px;width: 15;height: 15px; color: white;">UPLOAD</button>
+
+ -->
+
+
+</div>
+
+
+
+</div>
+
+<div id="regstr2">
+
+
+
+<img  style="padding: 9px; margin-left:50px; " src="images/Untitled-1.png" width="80px; ">
+  
+  <div style="float: right; margin-right:638px; padding: 10px;">
+  <form action="">
+<p style="font-size: 15px;">Instruct led class Raoom based training are schedule till<br>
+march 2016.You can leave your details <a style="color: #663399;">here</a> if you want us <br>
+to keep you portal when we come up with our new schedul</p>
+<h6 style="color:#660066;font-size: 16px; ">Leave your details below</h6>
+<span style="font-size: 14px;">First Name</span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">
+<span style="padding: 0 40px">&nbsp;</span> <span style="font-size: 14px;">Last Name</span>&nbsp<input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+<span style="font-size: 14px;">Contact</span>&nbsp&nbsp &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;">
+  <span style="padding: 0 44px">&nbsp;</span> <span style="font-size: 14px;">Email</span> &nbsp <input style="height:15px; font-size: 14px;"  type="text" size="16px;"><br>
+   
+<p style="font-size: 14px;">If you want us to keep you posted when we come up with our new schedule<button style="background-color: #663399;font-size:8px; color: white;">Submit</button></p>
+<p style="font-size:14px; color: #660066;">Search by Module<select  id="styled-select">
+    <option value="" default selected>Choose from the list</option>
+    <option value="gg">Tea</option>
+    <option value="gg">Coffee</option>
+    <option value="jj">Soda</option>
+</select>
+<p style="font-size:14px; color: #660066;"> I Don't know which module I am suitable for <input size="4px" type="radio" name="gg"> </p>
+<span style="color: red;">SAP SALES & DISTRIBUTION(SD)</span>
+<span style="font-size: 8px;">CLICK FOR DETAILS</span><br>
+<span style="font-size: 7px;"></span>&nbsp&nbsp<input style="height:15px; font-size: 10px;"  type="text" size="16px;">&nbsp&nbsp<button style="background-color: black;color: white; width:15%; height: 15px;font-size: 8px;">Browse</button><br>
+<button style="background-color: #663399;font-size: 8px;width: 15;height: 15px; color: white;">UPLOAD</button>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+<div id="mar1"></div>
+
+<div id="show"> <!-- main started -->
+<!-- <div id="sap" style="font-size: 10px;">
+SAP<br>
+BigData<br>
+IOT<br>
+<span style="font-size: 7px;">(Internet Of Things)</span>
+</div> -->
+
+<div id="flip"><a id="first" href="#">RETAIL TRAINING<br>(training for individuals)</a></div>
+
+<div class="childNode" id="panel"><a id="first1" href="#">TRAINING</a></div><div id="panel1"><a id="second1" href="#" >CERTIFICATE</a></div><div id="panel2"><a id="three1" href="#">PLACEMENT</a></div>
+<div id="a">
+<a href="#tp1" class="tg1" style="float: left; color: black;">Training Method</a><br>
+<a  href="#tp2" class="tg2" style="color: black;">Training Infrastructure</a><br>
+<a href="#tp3" class="tg3" style="color: black;">Training Schedules</a><br>
+<a href="#tp4" class="tg4" style="color: black;">Training Pool</a><br>
+<a href="#tp5" class="tg5" style="color: black;">Why Connaissance</a><br>
+<a href="#tp6" class="tg6" style="color: black;">Register for training</a><br>
+<hr>
+<a href="#">USEFULL TOOLS<img alt="UF" src=""></a>
+<nav>
+<a href="#" style="color: black;">Calculate EMI</a>|
+<a href="#" style="color: black;">Download</a>|
+<a href="#" style="color: black;">Chat App</a>|
+<a href="#" style="color: black;">Feedback</a>|
+<a style="color: black;">Gallery</a>|
+<a style="color: black;">FAQs</a>
+</nav>
+</div>
+
+
+<div id="b">
+<a href="#cf1" class="cg1" style="color: black;">Why Certificate</a><br>
+<a href="#cf2" class="cg2"  style="color: black;">Levels of Certificate</a><br>
+<a href="#cf3" class="cg3"  style="color: black;">Sample Certificate</a><br>
+<a href="#cf4" class="cg4"  style="color: black;">Certificate T&C</a><br>
+<p style=""></p>
+<hr>
+<a>USEFULL TOOLS<img alt="UF" src=""></a>
+<nav>
+<a href="#" style="color: black;">Yours Certificate</a>|
+<a href="#" style="color: black;">Gallery</a>|
+<a>FAQs</a>
+</nav>
+
+
+</div>
+
+<div id="c">
+<a href="#plc1" class="plcg1" style="color: black;">Our Placement Philosophy</a><br>
+<a href="#plc2" class="plcg2"  style="color: black;">Companies</a>
+<p style=""></p>
+<hr>
+<a href="#">USEFULL TOOLS<img alt="UF" src=""></a>
+<nav>
+<a href="#" style="color: black;">Matching Jobs</a>
+<a href="#" style="color: black;">Placement List</a>|
+<a href="#" style="color: black;">Gallery</a>|
+<a href="#" style="color: black;">Chat App</a>
+<a href="#" style="color: black;">FAQs</a>
+</nav>
+</div>
+
+
+
+<div class="parentNode a2" id="corp"><a id="second" href="#">CORPORATE TRAINING<br>(Training for employee of SAP Partner) </a></div>
+<div class="childNode" id="d">
+<a href="#corp1" class="crpg1" style="color: black;">Delivery Methodology</a><br>
+<a href="#corp2" class="crpg2" style="color: black;">Corporate Training Schedule</a><br>
+<a href="#corp3" class="crpg3" style="color: black;">Know Our Trainers</a><br>
+<a href="#corp4" class="crpg4" style="color: black;">Why Connaissance</a><br>
+<a href="#corp5" class="crpg5" style="color: black;">Register Engineer for training</a><br>
+<p style=""></p>
+<hr style=" margin-right: 120px;">
+<a >USEFULL TOOLS<img alt="UF" src=""></a><br>
+<nav>
+<a href="#" style="color: black;">Download</a>|
+<a href="#" style="color: black;">Feedback</a>|
+<a href="#" style="color: black;">Chat App</a>|
+<a href="#" style="color: black;">Gallery</a>|
+<a href="#" style="color: black;">FAQs</a>
+</nav>
+</div>
+<div class="parentNode a3" id="flip1"><a id="three" href="#">UNIVERSITY ALLIANCES<br>(training for students at compus) </a></div>
+<div class="childNode" id="p"><a id="first2" href="#">TRAINING</a></div><div id="p1"><a id="second2" href="#">CERTIFICATE</a></div><div id="p2"><a id="three2" href="#">PLACEMENT</a></div>
+<div id="e">
+<a href="#ut1" class="utg1" style="color: black;">Why SAP at Univ.</a><br>
+<a href="#ut2" class="utg2" style="color: black;">Modules & Method of</a><br>
+<a href="#ut3" class="utg3" style="color: black;">Training</a><br>
+
+<a href="#ut4" class="utg4"style="color: black;">Why Connaissance</a><br>
+<a href="#ut5" class="utg5" style="color: black;">Register for training</a><br>
+<hr>
+<a>USEFULL TOOLS<img alt="UF" src=""></a><br>
+<nav>
+<a href="#" style="color: black;">EMI Calculate</a>|
+<a href="#" style="color: black;">Download</a>|
+<a href="#" style="color: black;">Feedback</a>|
+<a href="#" style="color: black;">Chat App</a>|
+<a style="color: black;">Gallery</a>|
+<a style="color: black;">FAQs</a>
+</nav>
+
+</div>
+
+<div id="f">
+<a href="#uc1" class="ucg1" style="color: black;">Why Certificate</a><br>
+<a href="#uc2" class="ucg2" style="color: black;">Levels of Certificate</a><br>
+<a href="#uc3" class="ucg3" style="color: black;">Sample Certificate</a><br>
+<a href="#uc4" class="ucg4" style="color: black;">Certificate T&C</a><br>
+<p style=""></p>
+<hr>
+<a href="#">USEFULL TOOLS<img alt="UF" src=""></a>
+<nav>
+<a href="#" style="color: black;">Print Certificate</a>|
+<a href="#" style="color: black;">Gallery</a>|
+<a href="#" style="color: black;">FAQs</a>
+</nav>
+</div>
+
+<div id="g">
+<a href="#up1" class="upg1" style="color: black;">SAP Placement & Colleges</a><br>
+<a href="#up2" class="upg2"  style="color: black;">Our Placement & Philosophy</a><br>
+<a href="#up3" class="upg3"  style="color: black;">College & Campus</a><br>
+<p style=""></p>
+<hr>
+<a>USEFULL TOOLS<img alt="UF" src=""></a>
+<nav>
+<a href="#" style="color: black;">Matching Jobs</a>
+<a href="#" style="color: black;">Placement List</a>|
+<a href="#" style="color: black;">Feedback</a>|
+<a href="#" style="color: black;">Gallery</a>|
+<a href="#" style="color: black;">FAQs</a>
+</nav>
+</div>
+
+</div><!-- Main div end -->
+<!-- <iframe src="Video.html" style="width: 30%; height: 150px" border:none; name="ll"></iframe><br> -->
+<iframe id="frame1" width="20%" height="30%;"  src="enquiry.html" name="iframe_a" style="text-align: center; background-color: #00c1c1; float: left;margin-left: 40%; border: none; "></iframe>
+<iframe id="frame2" width="20%" height=30%;"  src="walkin.html" name="iframe_a" style="text-align: center; background-color:#008B8B; float: left;margin-left: 40%; border: none; "></iframe>
+<iframe id="frame3" width="20%" height=30%;"  src="certi.html" name="iframe_a" style="text-align: center; background-color: #00c1c1; float: left;margin-left: 40%; border: none; "></iframe>
+<iframe id="frame4" width="20%" height=30%;"  src="registr.html" name="iframe_a" style="text-align: center; background-color: #00c1c1; float: left;margin-left: 40%; border: none; "></iframe>
+<iframe id="frame5" width="20%" height=30%;"  src="placed.html" name="iframe_a" style="text-align: center; background-color:  #00aeae; float: left;margin-left: 40%; border: none; "></iframe>
+<div id="lo1">
+<ol >
+<!-- <a href="Login01.html" target="ll">Walkin</a> -->
+<li><a id="en01" href="#">Enquiry</a></li><br>
+<li><a id="wal" href="#">Walked In</a></li><br>
+<li><a id="intr" href="#">Interested for certification</a></li><br>
+<li><a id="regtr" href="#">Registered</a></li><br>
+<li><a  id="plcd" href="#">Placed</a></li>
+
+</ol>
+
+</div>
+
+</div><!-- main menu height and width..... -->
+
+<!-- Icons...here... -->
+<div class="happiness">
+
+<nav id="nav1">
+			<a href="reality.html"><sub><img src="images/reality.png" width="25px" height="10px;" style="margin-left: 36px;"/></sub> <span class="butlink"> <sub>REALTY </sub></span> </a>
+<a href="education.html"><sub><img src="images/education.png" width="25px;"height="20px"/></sub> <span class="butlink"><sub> EDUCATION </sub></span> </a>
+
+<a style="float: right;margin-right: 60px; padding: 8px;" href="#" id="ppts"><b>PPTS</a><span style=" float :right;margin-right: -11px; color: #009393;padding: 8px;">|</span>
+<a style="float: right;margin-right: -12px; padding: 8px;" href="#" id="videos"><b>VIDEOS</a>
+
+</nav>
+
+<div>
+<nav>
+<a></a>
+<a></a>
+</nav>
+</div>
+</div>
+<footer>
+<div id="connections">
+<span class="social-link" style="padding-left:22px;text-align:right;color:white; font-size: 15px;margin-left: 19px;"><sub>Lets Connect</sub></span>
+<img src="images/social media.png" />
+<nav class="right">
+<a href="terms.html" style="color: white;">Terms of use</a> <span style="color: white;">|</span>
+  <a href="#site.html " style="color: white;">Site Map</a><span style="color: white;"> |</span>
+  <a href="privacy.html" style="color: white;">Privacy Statement</a> <span style="color: white;">|</span>
+  <a href="trademark.html"style="color: white;">Trademark</a><span style="color: white;"> |</span>
+  <a href="copyright.html"style="color: white;">Copyright</a><span style="color: white;"> |</span>
+  <a href="Contact_us.html"style="color: white;">Contact us</a>
+</nav>
+
+</div>
+</footer>
+</body>
+</html>
+	<!-- Start Js Files -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script><!--jQuery is a Javascript library that greatly reduces the amount of code that you must write.-->
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script><!--Packed with many functionalies such as carousel slider, responsivity, tabs, drop downs, buttons, and many other features-->
+	<script src="js/modernizr.min.js" type="text/javascript"></script><!--Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.-->

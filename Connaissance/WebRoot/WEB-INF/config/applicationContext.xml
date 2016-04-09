@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+	   					   http://www.springframework.org/schema/aop 
+	   					   http://www.springframework.org/schema/aop/spring-aop-3.0.xsd 
+	   					   http://www.springframework.org/schema/tx 
+	   					   http://www.springframework.org/schema/tx/spring-tx-3.0.xsd 
+	   					   http://www.springframework.org/schema/context 
+	   					   http://www.springframework.org/schema/context/spring-context-3.0.xsd 
+	   					   http://www.springframework.org/schema/mvc 
+	   					   http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<import resource="common-applicationContext.xml" />
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<!-- partner implemantion classes configuration -->
+
+	<bean id="connIDelegate" class="com.connaissance.delegate.ConnDelegateImpl"
+		scope="prototype">
+		<property name="connIService" ref="connIService" />
+	</bean>
+
+	<bean id="connIService" class="com.connaissance.service.ConnServiceImpl"
+		scope="prototype">
+		<property name="connIDao" ref="connIDao" />
+		<property name="encription" ref="encription" />
+		<property name="regMail" ref="regMail" />
+
+	</bean>
+
+	<bean id="regMail" class="com.connaissance.mail.RegMail" scope="prototype"></bean>
+
+
+	<bean id="connIDao" class="com.connaissance.dao.ConnDaoImpl"
+		scope="prototype">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<bean id="candidateRegistrationTable" class="com.connaissance.domain.CandidateRegistrationTable"
+		scope="prototype">
+	</bean>
+
+	<bean id="cnnAdminMRegistrationDetails" class="com.connaissance.domain.CnnAdminMRegistrationDetails"
+		scope="prototype">
+	</bean>
+
+	<bean id="encription" class="com.connaissance.utill.Encription"
+		scope="prototype">
+	</bean>
+
+	<bean id="consultantRegisrationTable" class="com.connaissance.domain.ConsultantRegisrationTable"
+		scope="prototype">
+		<property name="leadGenerationCategoryTable" ref="leadGenerationCategoryTable"></property>
+	</bean>
+
+	<bean id="consultantQualificationDeatils" class="com.connaissance.domain.ConsultantQualificationDeatils"
+		scope="prototype">
+		<property name="consultantQualificationTypeTable" ref="consultantQualificationTypeTable"></property>
+	</bean>
+
+	<bean id="consultantQualificationTypeTable"
+		class="com.connaissance.domain.ConsultantQualificationTypeTable"
+		scope="prototype">
+	</bean>
+
+	<bean id="consultantExperienceDeatilsTable"
+		class="com.connaissance.domain.ConsultantExperienceDeatilsTable"
+		scope="prototype">
+	</bean>
+
+	<bean id="candidateWalkinIdTable" class="com.connaissance.domain.CandidateWalkinIdTable"
+		scope="prototype">
+	</bean>
+
+	<bean id="leadGenerationCategoryTable" class="com.connaissance.domain.LeadGenerationCategoryTable"
+		scope="prototype">
+		<property name="cnnAdminMRegistrationDetails" ref="cnnAdminMRegistrationDetails" />
+	</bean>
+
+	<bean id="referedCandidateDatailsTable" class="com.connaissance.domain.ReferedCandidateDatailsTable"
+		scope="prototype">
+		<property name="consultantRegisrationTable" ref="consultantRegisrationTable"></property>
+	</bean>
+
+	<bean id="commonRegisrationTable" class="com.connaissance.domain.CommonRegisrationTable"
+		scope="prototype">
+	</bean>
+
+	<bean id="consultantReferalTable" class="com.connaissance.domain.ConsultantReferalTable"
+		scope="prototype">
+		<property name="consultantRegisrationTable" ref="consultantRegisrationTable"></property>
+	</bean>
+	<bean id="bankDetailsTable" class="com.connaissance.domain.BankDetailsTable"
+		scope="prototype">
+		<property name="consultantRegisrationTable" ref="consultantRegisrationTable"></property>
+	</bean>
+	<bean id="moreInformationTable" class="com.connaissance.domain.MoreInformationTable"
+		scope="prototype">
+		<property name="consultantRegisrationTable" ref="consultantRegisrationTable"></property>
+	</bean>
+	<bean id="enquire" class="com.connaissance.domain.Enquire" scope="prototype">
+	</bean>
+
+</beans>

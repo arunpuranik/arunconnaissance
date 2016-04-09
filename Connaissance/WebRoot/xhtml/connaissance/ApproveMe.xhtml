@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ice="http://www.icesoft.com/icefaces/component"
+	xmlns:ace="http://www.icefaces.org/icefaces/components">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Signed Partner</title>
+	<link rel="shortcut icon"
+		href="#{facesContext.externalContext.requestContextPath}/resources/images/ms-icon-310x310.png"
+		type="image/x-icon" />
+
+	<style>
+#footer1 {
+	height: 20px;
+	width: 100%;
+	background: #1d2950;
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+	margin-top: 149px;
+	clear: both;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1
+		), color-stop(1, #0061a7));
+	background: -moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: -ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
+	background: linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1',
+		endColorstr='#0061a7', GradientType=0);
+	background-color: #007dc1;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #154682;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0061a7
+		), color-stop(1, #007dc1));
+	background: -moz-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -webkit-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -o-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: -ms-linear-gradient(top, #0061a7 5%, #007dc1 100%);
+	background: linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0061a7',
+		endColorstr='#007dc1', GradientType=0);
+	background-color: #0061a7;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+</style>
+</h:head>
+
+<h:body>
+	<ui:include src="../connaissance/connaissanceAdminLoginHeader.xhtml" />
+	<h:form>
+		<p:messages />
+
+		<div
+			style="border: 1px solid #e6e5e5; width: 800px; margin: 39px auto; height: 600px; margin-bottom: 70px; display: inline-block; margin-left: 300px;">
+
+			<br /> <span><center>
+					<h3 class="form-signin-heading"
+						style="margin-top: 10px; margin-bottom: 23px;">Approve <ice:outputText value="#{approveUpdatMBean.consultantRegisrationTable.leadGenerationCategoryTable.leadGenerationCategoryType}" style="font-size:20px;color:#357EC7;"/> Details</h3>
+				</center></span>
+
+			<table style="margin: 10px 0px 0px 60px;" border="0">
+
+
+				<tr>
+				<td>
+				<ice:outputLabel value="Lead Generation Category(Partner Type):"/>
+				</td>
+					<td><ice:outputText value="#{approveUpdatMBean.consultantRegisrationTable.leadGenerationCategoryTable.leadGenerationCategoryType}" style="font-size:20px;color:#357EC7;"/></td>
+				</tr>
+				<tr>
+					<td>Consultant Name</td>
+				</tr>
+				<tr>
+					<td><ice:inputText
+							style="width:277px;height:20px; margin-bottom: 15px;"
+							value="#{approveUpdatMBean.consultantRegisrationTable.consultantName}"
+							id="type">
+							<p:watermark value="Enter Consultant Name"
+								for="type"></p:watermark>
+						</ice:inputText></td>
+				</tr>
+				<tr>
+					<td>Contact Number</td>
+				</tr>
+				<tr>
+					<td><ice:inputText
+							style="width:277px;height:20px; margin-bottom: 15px;"
+							value="#{approveUpdatMBean.consultantRegisrationTable.mobileNumber}"
+							id="type1">
+							<p:watermark value="Enter Category Code" for="type1"></p:watermark>
+						</ice:inputText></td>
+				</tr>
+				<tr>
+					<td>Email Id</td>
+				</tr>
+				<tr>
+					<td><ice:inputText
+							style="width:277px;height:20px; margin-bottom: 15px;"
+							value="#{approveUpdatMBean.consultantRegisrationTable.emailId}"
+							id="type2">
+							<p:watermark value="Enter Sub Category Type" for="type2"></p:watermark>
+						</ice:inputText></td>
+				</tr>
+				<tr>
+					<td>Status</td>
+				</tr>
+				<tr>
+					<td><ice:inputText
+							style="width:277px;height:20px; margin-bottom: 15px;"
+							value="#{approveUpdatMBean.consultantRegisrationTable.status}"
+							id="type3">
+							<p:watermark value="Enter Sub Category Code" for="type3"></p:watermark>
+						</ice:inputText></td>
+				</tr>
+				<tr>
+					<td>Official MailId</td>
+				</tr>
+				<tr>
+					<td><ice:inputText
+							style="width:277px;height:20px; margin-bottom: 15px;"
+							value="#{approveUpdatMBean.consultantRegisrationTable.officialMailid}"
+							id="type4">@connaissance.co
+							<p:watermark value="Enter Sub Category Code" for="type4"></p:watermark>
+						</ice:inputText></td>
+				</tr>
+				<tr>
+					<td><h:commandButton
+							action="#{approveUpdatMBean.editApproveMethod}" value="Approve"
+							styleClass="myButton"
+							style="width:350px; height: 34px;font-weight:bold;border-width: 1px; margin-left: 178px;  border-style: solid;
+    cursor: pointer;overflow: visible;font-size:16px;font-family: Arial,sans-serif;"
+							onclick="return confirm('Are all the information correct.Can the information be saved')"></h:commandButton></td>
+				</tr>
+
+			</table>
+
+		</div>
+	</h:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml" />
+</h:body>
+</html>

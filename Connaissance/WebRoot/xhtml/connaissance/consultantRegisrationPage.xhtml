@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<title>Consultant Registration</title>
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =                 80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+#mj {
+	font-size: 18px;
+	font-family: serif;
+	font-stretch: initial;
+	font-variant: inherit;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0));
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0);
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+
+	<script type="text/javascript">
+	function validate() {
+		var pasw = document.getElementById('form:password');
+		var Rpasw = document.getElementById('form:Rpassword');
+		if (pasw.value != Rpasw.value) {
+			alert("Passwords do not match");
+		}
+	}
+</script>
+</h:head>
+<h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<h:form>
+
+
+		<div
+			style="border: 1px solid #e6e5e5; width: 700px; margin: 39px auto; height: 830px; margin-bottom: 70px; display: inline-block;">
+
+			<h6
+				style="padding: 0 0 20px 57px; font-family: sans-serif; color: #444; font-size: 16px; line-height: 42px; display: inline-block; margin-top: 13px; margin-bottom: -44px;">
+				Contact Information <br></br> <span
+					style="color: gray; font-size: 17px; line-height: 16px; line-height: 24px; font-weight: normal; margin-top: 10px; float: left; font-family: sans-serif;">
+					Please enter contact information to recieve communication.</span>
+			</h6>
+
+			<table style="margin: 32px 0px 0px 63px;" cellpadding="5"
+				cellspacing="6">
+				<p:messages />
+				<tr>
+					<td><ice:outputLabel value="Lead Generation Category Type">
+
+						</ice:outputLabel></td>
+					<td><h:selectOneMenu id="cat"
+							style="width:282px;height:30px;margin-bottom:20px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.leadGenerationCategoryTable.categoryId}"
+							required="true" requiredMessage="Please Select Category">
+							<f:selectItem itemLabel="Select Category"
+								itemValue="Select Category" />
+							<f:selectItems
+								value="#{consultantRegisrationMBean.leadGenerationCategoryTablesList}"
+								var="row" itemLabel="#{row.leadGenerationCategoryType}"
+								itemValue="#{row.categoryId}"></f:selectItems>
+
+						</h:selectOneMenu></td>
+
+				</tr>
+				<tr>
+					<td><h:outputLabel value="Type"></h:outputLabel></td>
+					<td><p:selectOneRadio
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.type}"
+							id="test" layout="pageDirection">
+							<p:ajax update="inputPanel" process="@this"></p:ajax>
+							<f:selectItem itemValue="individual" itemLabel="Individual" />
+							<f:selectItem itemLabel="Company" itemValue="company" />
+
+
+						</p:selectOneRadio></td>
+
+				</tr>
+				<tr>
+					<td><h:panelGroup id="inputPanel">
+							<p:inputText
+								value="#{consultantRegisrationMBean.consultantRegisrationTable.companyContactPersonName}"
+								rendered="#{consultantRegisrationMBean.consultantRegisrationTable.type eq 'company'}"></p:inputText>
+
+						</h:panelGroup></td>
+				</tr>
+
+				<tr>
+
+					<td id="mj">First Name</td>
+					<td id="mj">Last Name</td>
+				</tr>
+
+				<tr>
+					<td><ice:inputText id="name" style="width:277px;height:24px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.consultantName}"></ice:inputText>
+
+					</td>
+					<p:watermark value="enter full name here" for="name"></p:watermark>
+
+					<td><ice:inputText id="lname" style="width:277px;height:24px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.lastName}"></ice:inputText>
+
+					</td>
+					<p:watermark value="enter full name here" for="lname"></p:watermark>
+				</tr>
+
+
+
+
+				<tr>
+
+					<td id="mj">Email Id</td>
+					<td id="mj">Password</td>
+				</tr>
+
+				<tr>
+
+					<td><ice:inputText id="emai" style="width:277px;height:24px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.emailId}"></ice:inputText>
+
+					</td>
+					<p:watermark value="enter email id here" for="emai"></p:watermark>
+
+					<td><ice:inputSecret id="pass"
+							style="width:277px;height:24px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.password}" />
+
+					</td>
+					<p:watermark value="enter password here" for="pass"></p:watermark>
+				</tr>
+
+				<tr>
+					<td id="mj">RPassword</td>
+					<td id="mj">Address</td>
+				</tr>
+
+				<tr>
+
+					<td><ice:inputSecret style="width:277px;height:24px;"
+							id="rpass" value="#{consultantRegisrationMBean.cPassword}"
+							onchange="validate();"
+							requiredMessage="validate password is required" /></td>
+					<p:watermark value="re enter password here" for="rpass"></p:watermark>
+
+					<td><ice:inputTextarea id="add"
+							style="width:277px;height:45px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.address}"></ice:inputTextarea>
+
+					</td>
+					<p:watermark value="enter Address " for="add"></p:watermark>
+				</tr>
+
+
+				<tr>
+
+					<td id="mj">Mobile Number</td>
+
+					<td id="mj">Experience</td>
+
+				</tr>
+
+				<tr>
+					<td><ice:inputText id="mob"
+							style="width:277px;height:24px;margin-top: -18px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.mobileNumber}"></ice:inputText>
+
+					</td>
+					<p:watermark value="enter mobile number here " for="mob"></p:watermark>
+
+					<td><ice:selectOneMenu
+							style="width:282px;height:30px;margin-bottom:20px;"
+							value="#{consultantRegisrationMBean.consultantRegisrationTable.experience}">
+							<f:selectItem itemLabel="Select One" itemValue="Select One"></f:selectItem>
+							<f:selectItem itemLabel="0-1 year" itemValue="0-1 year"></f:selectItem>
+							<f:selectItem itemLabel="1-2 year" itemValue="1-2 year"></f:selectItem>
+							<f:selectItem itemLabel="2-3 year" itemValue="2-3 year"></f:selectItem>
+							<f:selectItem itemLabel="3-4 year" itemValue="3-4 year"></f:selectItem>
+							<f:selectItem itemLabel="4-5 year" itemValue="4-5 year"></f:selectItem>
+						</ice:selectOneMenu></td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td><ice:outputLabel
+							value="( Type the characters you see in the images below  )"
+							style=" font-size:15px;font-family: 
+						inherit;margin-top:-2px;text-align:justify; font-weight:600;  margin-left:72px;  color: rebeccapurple;" />
+						<ice:graphicImage
+							value="#{facesContext.externalContext.requestContextPath}/resources/images/captcha.jpg"
+							style="height: 57px; margin-bottom: -22px;  margin-top: 17px;  margin-left: 74px;"></ice:graphicImage>
+						<ice:outputText value="#{consultantRegisrationMBean.randomString}"
+							style="font-size: 33px; margin-left: -138px;  margin-top: -21px;  margin-bottom: 20px;  font-family: Blackoak Std;  font-style: italic;" />
+					</td>
+					<td><ice:inputText
+							value="#{consultantRegisrationMBean.checkSecurityNos}"
+							style="height: 27px;font-size: 20px; width: 115px;  font-weight: bold;  margin-left: -292px;  margin-top: 43px;"
+							title="Enter Security Code" /></td>
+
+				</tr>
+				<tr>
+					<td><h:commandButton
+							action="#{consultantRegisrationMBean.consultantSaveInfo}"
+							value="Save" styleClass="myButton"
+							style="width:350px; margin-top:47px;height: 34px;font-weight:bold;border-width: 1px; margin-left: 178px;  border-style: solid; cursor: pointer;overflow: visible;font-size:16px;font-family: Arial,sans-serif;"
+							onclick="return confirm('Are all the information correct.Can the information be saved')"></h:commandButton></td>
+				</tr>
+			</table>
+		</div>
+		<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+	</h:form>
+</h:body>
+</html>

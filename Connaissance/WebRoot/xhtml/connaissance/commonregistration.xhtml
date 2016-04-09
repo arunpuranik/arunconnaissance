@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+	<title>Common Registration</title>
+	<script type="text/javascript">
+		function validateRepassword() {
+			var pasw = document.getElementById('checkpassw:password');
+			var Rpasw = document.getElementById('checkpassw:Rpassword');
+			if (pasw.value != Rpasw.value) {
+				alert("Passwords do not match");
+			}
+		}
+	</script>
+
+	<style>
+.black_overlay {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity =      
+		                                                         
+		                                                         
+		                                                         
+		                                                         
+		                                                                    
+		                                                                    
+		                                            80);
+	border: 10px solid #ddd;
+}
+
+.white_content {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	width: 50%;
+	height: 50%;
+	padding: 16px;
+	background-color: white;
+	z-index: 1002;
+	overflow: auto;
+	border: 10px solid #ddd;
+	border-radius: 12px;
+}
+
+.contheader {
+	text-align: left;
+	font-size: 12px;
+	color: #000;
+	font-weight: bold;
+}
+
+#
+span {
+	color: red;
+}
+
+.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #7157A0;
+	box-shadow: inset 0px 1px 0px 0px #7157A0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #7157A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #7157A0;
+}
+
+.myButton:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #7157A0
+		), color-stop(1, #7157A0) );
+	background: -moz-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -webkit-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -o-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: -ms-linear-gradient(top, #7157A0 5%, #7157A0 100%);
+	background: linear-gradient(to bottom, #7157A0 5%, #7157A0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7157A0',
+		endColorstr='#7157A0', GradientType=0 );
+	background-color: #7157A0;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.form-signin-heading {
+	text-align: center;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+</style>
+</h:head>
+<h:body>
+	<ui:include src="/xhtml/connaissanceHeader.xhtml"></ui:include>
+	<ice:form>
+
+		<div
+			style="border: 1px solid whitesmoke; width: 500px; margin: 39px auto; height: 623px; margin-bottom: -393px; display: inline-block; margin-left: 457px; box-shadow: 0px 0px 6px beige;">
+			<p:messages />
+
+
+			<h2 align="center"
+				style="width: 463px; height: 23px; margin-left: 7px; margin-top: 10px; border: 1px solid #7157A0; background-color: #7157A0; padding: 10px 10px 10px 10px; box-shadow: 0 0px 6px rgba(0, 0, 0, 0.65);">
+				<span
+					style="color: azure; font-weight: bold; overflow: visible; font-size: 17px; font-family: Arial, sans-serif;">Common
+					Sign Up</span>
+			</h2>
+
+			<table style="margin: 18px 0px 0px 63px;" cellpadding="2"
+				cellspacing="6">
+
+				<tr>
+					<td style="font-family: Arial, sans-serif; font-size: 16px;">First
+						Name</td>
+				</tr>
+				<tr>
+					<td><ice:inputText id="mm"
+							style="height: 29px;width: 367px;font-size:16px;"
+							value="#{commonRegistartionMBean.commonRegisrationTable.firstName}" />
+					</td>
+					<p:watermark value=" first name" for="mm"></p:watermark>
+				</tr>
+				<tr>
+					<td style="font-family: Arial, sans-serif; font-size: 16px;">Last
+						Name</td>
+				</tr>
+				<tr>
+					<td><ice:inputText id="nm"
+							style="height: 29px;width: 367px;font-size:16px;"
+							value="#{commonRegistartionMBean.commonRegisrationTable.lastName}" />
+					</td>
+					<p:watermark value=" last name" for="nm"></p:watermark>
+				</tr>
+				<tr>
+					<td style="font-family: Arial, sans-serif; font-size: 16px;">Email
+						Id</td>
+				</tr>
+				<tr>
+
+					<td><ice:inputText id="em"
+							style="height: 29px;width: 367px;font-size:16px;"
+							value="#{commonRegistartionMBean.commonRegisrationTable.emailId}"></ice:inputText>
+					</td>
+					<p:watermark value=" email id" for="em"></p:watermark>
+				</tr>
+				<tr>
+					<td style="font-family: Arial, sans-serif; font-size: 16px;">Contact
+						Number</td>
+				</tr>
+				<tr>
+					<td><ice:inputText id="kk"
+							style="height: 29px;width: 367px;font-size:16px;"
+							value="#{commonRegistartionMBean.commonRegisrationTable.contactNum}"></ice:inputText>
+					</td>
+					<p:watermark value="contact num" for="kk"></p:watermark>
+
+				</tr>
+				<tr>
+					<td
+						style="font-family: Arial, sans-serif; font-size: 16px; width: 40px;">Enquire
+						here about Technology Training Program</td>
+				</tr>
+				<tr>
+
+					<td><ice:inputTextarea id="pass"
+							style="height: 120px;width: 367px;font-size:16px;"
+							value="#{commonRegistartionMBean.commonRegisrationTable.enquire}" />
+					</td>
+					<p:watermark value=" Enquire Type" for="pass"></p:watermark>
+				</tr>
+
+
+				<tr>
+					<td><br></br> <h:commandButton
+							action="#{commonRegistartionMBean.coomonSaveInfo}"
+							value="Register   - >" styleClass="myButton"
+							style="
+							width:136px; margin-top:8px;height: 34px;margin-left: 101px;font-weight:bold;border-width: 1px; box-shadow: 0 0px 6px rgba(0,0,0,0.65);  border-style:
+							solid;  cursor: pointer;overflow:
+							visible;font-size:16px;font-family:Arial,sans-serif;"></h:commandButton></td>
+				</tr>
+			</table>
+
+			<ice:panelPopup
+				rendered="#{commonRegistartionMBean.registredSucessPopUP}"
+				style="width:560px;hight:600px;color:#187CC5;border-color:#187CC5;border: 10px solid #5BC4CE;"
+				draggable="true" autoCentre="true" modal="true">
+
+				<f:facet name="header">
+
+					<h:panelGroup>
+						<h:panelGroup
+							style="float:left;width:563px;height:213px;background-color:white;">
+							<p
+								style="font-size: 18px; font-family: segoe UI; margin-left: 225px; margin-top: 20px;">Thank
+								You</p>
+
+							<p
+								style="font-size: 18px; font-family: segoe UI; margin-left: 68px; margin-top: -4px;">your
+								registration has been completed successfully with
+								Connaissance.Our Admin will contact you soon</p>
+
+							<table style="margin-left: 120px;">
+								<tr>
+									<td>This is your Enquire Id is =</td>
+									<td><ice:outputText style="color:#70579E;"
+											value="#{commonRegistartionMBean.commonRegisrationTable.walkinId}"></ice:outputText>
+									</td>Connaissance
+
+								</tr>
+							</table>
+							<ice:commandButton
+								rendered="#{commonRegistartionMBean.closePopUp}"
+								action="#{commonRegistartionMBean.backToRegistrationPopUp}"
+								image="#{facesContext.externalContext.requestContextPath}/resources/images/eventclosebutton.png"
+								style="height:25px;width:30px;float:right;margin-top: -148px;">
+							</ice:commandButton>
+						</h:panelGroup>
+					</h:panelGroup>
+				</f:facet>
+			</ice:panelPopup>
+		</div>
+
+	</ice:form>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:icecore="http://www.icefaces.org/icefaces/core"
+	xmlns:ace="http://www.icefaces.org/icefaces/components"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+<h:head>
+	<title>Product Engineering</title>
+	<style>
+#whole,#one,#two,#line {
+	width: 100%;
+}
+
+#one {
+	background: #fff;
+	height: 161px;
+}
+
+#two {
+	background: #000;
+	height: 71px;
+	opacity: 0.7;
+}
+
+#line {
+	background: #3EC3D2;
+	height: 5px;
+	margin-top: 2px;
+}
+
+#content {
+	height: auto;
+}
+
+#img {
+	float: left;
+}
+
+#text {
+	float: right;
+	margin-right: 50px;
+}
+
+#box1,#box2,#box3,#box4 {
+	float: left;
+}
+
+#mj {
+	cursor: pointer;
+	background: #179BA8;
+}
+
+#box1:hover,#box2:hover,#box3:hover,#box4:hover {
+	background: #3EC3D2;
+	cursor: pointer;
+}
+
+#box1 {
+	margin-left: 49px;
+	width: 296px;
+	height: 100%;
+}
+
+#box2,#box3,#box4 {
+	width: 200px;
+	height: 100%;
+}
+}
+</style>
+</h:head>
+<h:body>
+	<div id="whole">
+		<div id="one">
+			<div id="img">
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/conn.jpg"
+					width="527" height=""></ice:graphicImage>
+			</div>
+			<div id="text">
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/stars.png"
+					width="" height="" style="margin-left: 167px; margin-top: 20px;"></ice:graphicImage>
+
+				<p style="font-family: calibri">
+					Where <span style="color: red">Employees</span> enjoy, <span
+						style="color: cyan">Customers</span> rejoice
+				</p>
+
+				<ice:graphicImage
+					value="#{facesContext.externalContext.requestContextPath}/resources/images/login.png"></ice:graphicImage>
+				<span style="font-family: calibri"> Customer Login</span>
+
+			</div>
+		</div>
+
+		<div id="two">
+			<div id="box1">
+				<center>
+					<div style="height: 50px;">
+
+
+						<ice:graphicImage
+							style="width:60px;height:40px;display:inline;margin-top:5px;"
+							value="#{facesContext.externalContext.requestContextPath}/resources/images/2.png"></ice:graphicImage>
+
+						<p
+							style="font-family: calibri; color: #fff; font-size: 12px; margin-top: 6px;">
+							TECHNOLOGY TRAINING</p>
+
+					</div>
+				</center>
+			</div>
+			<div id="box2">
+				<center>
+
+					<ice:graphicImage style="margin-top: 2px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/3.png"></ice:graphicImage>
+					<p style="font-family: calibri; color: #fff; font-size: 12px;">PRODUCT
+						ENGINEERING</p>
+				</center>
+			</div>
+			<div id="box3">
+				<center>
+
+					<ice:graphicImage style="margin-top: 3px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/4.png"></ice:graphicImage>
+
+					<p style="font-family: calibri; color: #fff; font-size: 12px;">BUSINESS
+						&amp; IT CONSULTING</p>
+				</center>
+			</div>
+			<div id="box4">
+				<center>
+
+					<ice:graphicImage style="margin-top: 3px;"
+						value="#{facesContext.externalContext.requestContextPath}/resources/images/5.png"></ice:graphicImage>
+
+
+					<p style="font-family: calibri; color: #fff; font-size: 12px;">TALENT
+						SOURCING</p>
+				</center>
+			</div>
+		</div>
+	</div>
+	<ui:include src="/xhtml/connaissanceFooter.xhtml"></ui:include>
+</h:body>
+</html>
